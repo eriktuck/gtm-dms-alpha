@@ -1,0 +1,57 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://github.com/tupadr3/plantuml-icon-font-sprites/tree/master/devicons2
+!include DEVICONS/postgresql.puml
+!include DEVICONS/google_drive.puml
+!include DEVICONS/database.puml
+' !include DEVICONS2/google.puml
+!include DEVICONS/javascript.puml
+
+HIDE_STEREOTYPE()
+SET_SKETCH_STYLE($bgColor="white", $footerWarning="Draft", $footerText="Created for discussion")
+LAYOUT_AS_SKETCH()
+UpdateElementStyle("", $shadowing="true")
+
+title: "Overview Container Diagram"
+
+Person(ip, "Implementing Partner")
+Person(acor, "A/COR")
+
+Boundary(agency, "Agency Systems"){
+    Container_Ext(dis, DIS)
+    Container_Ext(ddl, DDL)
+    Container_Ext(dec, DEC)
+}
+
+Boundary(missionDrive, Mission File Store){
+    Container(activityFolder, "Activity Folder", "Google Drive", "Store Activity data and deliverables", $sprite="google_drive")
+    Container(meclaLib, "MECLA Library", "Google Drive", "Store Mission-wide reports and analysis", $sprite="google_drive")
+}
+
+Boundary(missionDb, Mission Database){
+    ContainerDb(postgres, "Mission Database", "PostgreSQL", "Single source of truth for the Mission", $sprite="postgresql")
+    Container(activityDb, "Activity DB", "Google Apps Script", "Store Activity Information", $sprite="javascript")
+}
+
+Boundary(km, "Knowledge Management"){
+    Container(dataHub, "Data Hub", "Google Site", "Public platform for data products")
+    Container(myUSAID, "PPSO", "MyUSAID", "Internal knowledge management site")
+}
+
+Lay_R(missionDb, km)
+
+Rel(acor, activityDb, "updates")
+Rel_D(ip, agency, "submits to")
+Rel_D(ip, activityFolder, "uploads to")
+BiRel(dis, postgres, "integrates", "Data Steward")
+Rel_D(activityFolder, postgres, "inputs data", "Data Steward")
+BiRel_U(postgres, ddl, "integrates", "Data Steward")
+Rel_U(postgres, meclaLib, "stores analysis", "Data Steward")
+Rel_R(activityDb, postgres, "inputs Activity data", "Data Steward")
+BiRel_R(dec, meclaLib, "integrates", "Data Steward")
+Rel_R(postgres, km, " ")
+Rel_U(missionDrive, myUSAID, " ")
+
+@enduml
