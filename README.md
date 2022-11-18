@@ -1,6 +1,6 @@
 # README
 
-Documentation for the Mission Data Management System (alpha version). 
+Documentation for the Mission Data Management System (alpha version), find the site at https://eanderson-ei.github.io/gtm-dms-alpha/.
 
 Project relies on these great packages:
 
