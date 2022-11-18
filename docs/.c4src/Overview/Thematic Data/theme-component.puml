@@ -51,7 +51,7 @@ System_Boundary(meclaLib, "MECLA Library"){
 Container(myUSAID, "PPSO", "MyUSAID", "Internal knowledge management site")
 
 Rel_Neighbor(ip, activityFolder, "updates")
-Rel_U(activityFolder, acor, "reviews")
+Rel_D(activityFolder, acor, "reviews")
 Rel_L(activityMELP, dataInventory, " ")
 Rel(dataInventory, thematicData, " ")
 Rel(dataInventory, deliverables, " ")

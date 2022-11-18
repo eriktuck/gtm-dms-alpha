@@ -1,0 +1,15 @@
+site_name: Mission Data Management System
+repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
+site_description: The Mission Data Management System facilitates a data-informed approach to development.
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+nav:
+  - Home: 'index.md'
+  - Design: 
+    - Context: 'design/README.md'
+    - Overview: 'design/Overview/README.md'
+    - 'Activity Location Data': 'design/Overview/Activity Location Data/README.md'
+    - 'Performance Measures': 'design/Overview/Performance Measures/README.md'
+    - 'Thematic Data': 'design/Overview/Thematic Data/README.md'
