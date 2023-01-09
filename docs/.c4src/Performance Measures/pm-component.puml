@@ -1,0 +1,102 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!include ICONURL/material/border_all.puml
+!include ICONURL/material/folder.puml
+!include ICONURL/material/description.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://github.com/tupadr3/plantuml-icon-font-sprites/tree/master/devicons2
+!include DEVICONS/postgresql.puml
+!include DEVICONS/google_drive.puml
+!include DEVICONS/database.puml
+' !include DEVICONS2/google.puml
+!include DEVICONS/javascript.puml
+
+HIDE_STEREOTYPE()
+SET_SKETCH_STYLE($bgColor="white", $footerWarning="Draft", $footerText="Created for discussion")
+LAYOUT_AS_SKETCH()
+' LAYOUT_LEFT_RIGHT()
+UpdateElementStyle("", $shadowing="true")
+
+title: "Performance Reporting Component Diagram (DIS testing)"
+
+AddElementTag("tool", $shape=EightSidedShape(), $legendText="tool (eight sided)")
+AddRelTag("old", $textColor=$ARROW_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+
+ContainerDb(postgres, "Mission Database", "PostgreSQL", "Single source of truth for the Mission", $sprite="postgresql")
+Component(trackerGen, "TrackerGEN", "Google Apps Script", "generate Activity PM tracker", $tags="tool")
+
+System_Boundary(activityFolder, "Activity Folder"){
+    Boundary(activityPMdata, "Activity Performance Measure Data"){
+        Component(pmReports, "Activity PM Tracker", "Google Sheets", "Report aggregated PM data", $sprite="border_all")
+        Component(themeData, "Thematic Datasets", "Google Folder", "Report PM datasets", $sprite="folder")
+    }
+    Component(activityMELP, "Activity MECLA Plan & DMP", "Google Doc", "Activity MECLA and Data Management Plan", $sprite="description")
+    
+}
+
+' Component(pmReader, "PM Data Reader", "Google Apps Script", "Reads Activity DB data into database", $tags="tool")
+Component(pprTracker, "PPR Tracker", "Google Sheet", "aggregate all performance data", $sprite="border_all")
+
+System_Ext(factsInfo, "FactsInfo")
+
+Rel_Neighbor(activityMELP, activityPMdata, " ")
+Rel_L(pprTracker, postgres, "updates", "pipeline")
+Rel_L(trackerGen, pmReports, "creates", "Data Steward")
+Rel(pmReports, pprTracker, "updates", "A/COR")
+Rel_Neighbor(pprTracker, factsInfo, "submit to", "MECLA Team")
+
+
+' Person(ds, "Data Steward")
+' Person(ip, "Implementing Partner")
+' Person(acor, "A/COR")
+' System_Ext(dis, "DIS")
+' System_Ext(factsInfo, "FactsInfo")
+' Component_Ext(pmTemplate, "PM Template", "Excel", "Defines disaggregates and aggregation pattern")
+' ContainerDb(postgres, "Mission Database", "PostgreSQL", "Single source of truth for the Mission", $sprite="postgresql")
+' Component(trackerGen, "TrackerGEN", "Google Apps Script", "generate Activity PM tracker", $tags="tool")
+' Component(pmTemplateReader, "PM Template Reader", "Google Apps Script", "convert PM template to database table", $tags="tool")
+
+' System_Boundary(activityFolder, "Activity Folder"){
+'     Boundary(activityPMdata, "Activity Performance Measure Data"){
+'         Component(pmReports, "Activity PM Tracker", "Google Sheets", "Report aggregated PM data", $sprite="border_all")
+'         Component(themeData, "Thematic Datasets", "Google Folder", "Report PM datasets", $sprite="folder")
+'     }
+'     Component(activityMELP, "Activity MECLA Plan & DMP", "Google Doc", "Activity MECLA and Data Management Plan", $sprite="description")
+    
+' }
+
+' ' Component(pmReader, "PM Data Reader", "Google Apps Script", "Reads Activity DB data into database", $tags="tool")
+' Component(pprTracker, "PPR Tracker", "Google Sheet", "aggregate all performance data", $sprite="border_all")
+' Component_Ext(annualReport,"Annual Report")
+
+' ' Component(pmTemplateFiller, "PM Template Filler", "Google Apps Script", "writes data to the PM template", $tags="tool")
+' Container(meclaLib, "MECLA Library", "Google Drive", "Store Mission-wide reports and analysis", $sprite="google_drive")
+
+' Rel(ds, dis, "adds PMs")
+' Rel(ip, themeData, "reports PM data")
+' Rel(dis, pmTemplate, "downloads", "Data Steward")
+' Rel(pmTemplate, pmTemplateReader, "read by")
+' Rel(pmTemplateReader, postgres, "updates")
+' Rel_Neighbor(activityMELP, activityPMdata, " ")
+' Rel(activityPMdata, postgres, "updates", "Data Steward")
+' ' Rel(pmReader, postgres, "updates")
+' Rel_L(postgres, meclaLib, "generate & store reports", "Data Steward")
+' Rel(ds, activityFolder, "sets up")
+
+' Rel_U(ip, annualReport, "drafts", $tags="old")
+' Rel_U(acor, annualReport, "reviews", $tags="old")
+' Rel_R(postgres, pprTracker, "updates", $tags="old")
+' Rel(acor, pmReports, "input PM data", $tags="old")
+' Rel(trackerGen, pmReports, "create PM template", "Data Steward", $tags="old")
+' Rel(trackerGen, postgres, "uses", $tags="old")
+' Rel(pmReports, pprTracker, "updates", "A/COR", $tags="old")
+' Rel_Neighbor(pprTracker, factsInfo, "submit to", "MECLA Team", $tags="old")
+
+' ' Future
+' ' Rel(postgres, pmTemplateFiller, " ")
+' ' Rel(pmTemplateFiller, dis, "upload", "Data Steward")
+
+
+@enduml

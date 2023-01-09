@@ -1,1 +1,5 @@
 site/
+sql/*
+!sql/.keep
+data/*
+!data/.keep

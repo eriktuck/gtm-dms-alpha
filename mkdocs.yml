@@ -2,15 +2,44 @@ site_name: Mission Data Management System
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
 edit_uri: edit/main/docs/
 site_description: The Mission Data Management System facilitates a data-informed approach to development.
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 theme:
   name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.indexes (allows pages associated with section groups)
+    - search.share
+    - search.suggest
+    - search.highlight
+  font:
+    text: Source Sans Pro
+extra:
+  generator: false
 markdown_extensions:
   - admonition
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.snippets
+
+# Page tree
 nav:
-  - Home: 'index.md'
-  - Design: 
-    - Context: 'design/README.md'
-    - Overview: 'design/Overview/README.md'
-    - 'Activity Location Data': 'design/Overview/Activity Location Data/README.md'
-    - 'Performance Measures': 'design/Overview/Performance Measures/README.md'
-    - 'Thematic Data': 'design/Overview/Thematic Data/README.md'
+  - 'Home': 'index.md' 
+  - 'Design':
+    - 'Architecture':
+      - 'Overview': 'pages/architecture/README.md'
+      - 'Activity Data': 'pages/architecture/Activity Data/README.md'
+      - 'Activity Location Data': 'pages/architecture/Activity Location Data/README.md'
+      - 'Performance Measures': 'pages/architecture/Performance Measures/README.md'
+      - 'Thematic Data': 'pages/architecture/Thematic Data/README.md'
+    - 'Pipelines': 'pages/pipelines/pipelines.md'
+
+  #   - 'Components':
+  # - 'Usage':
+  #   - 'Setup': # link from home; or put getting started a top level
+  # - 'Knowledge Base':

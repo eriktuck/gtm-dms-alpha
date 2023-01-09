@@ -1,0 +1,152 @@
+Project mission_database {
+  database_type: 'PostgreSQL'
+  note: 'A single source of truth for the Mission'
+}
+
+Table "activities" {
+  "id" integer [pk, not null]
+  "lead_office" text
+  "activity_name" text
+  "activity_short_name" text
+  "activity_short_description" text
+  "activity_long_description" text
+  "activity_name_local" text
+  "activity_long_description_spanish" text
+  "prime_partner" text
+  "award_start_date" text
+  "award_end_date" text
+  "award_status" text
+  "total_estimated_ceiling" money
+  "prime_is_local_partner" text
+  "prime_is_new_usaid_partner" text
+  "sub_partners" text
+  "cen_pillar" text
+  "primary_do_under_new_cdcs" text
+  "mission_aor_cor_am" text
+  "has_digital_components" text
+  "digital_development_details" text
+  "phoenix_award_number" text
+}
+
+Table "activities_depts" {
+  "id" integer [not null]
+  "department" text [not null]
+  "codigo" integer [not null]
+}
+
+Table "activities_munis" {
+  "id" integer [not null]
+  "municipality_full_name" text [not null]
+  "codigo" integer [not null]
+  "department" text [not null]
+  "codigo1" integer [not null]
+  "municipality" text [not null]
+}
+
+Table "activities_ir" {
+  "id" integer [not null]
+  "ir_linkages_under_new_cdcs" text [not null]
+}
+
+Table "activities_pillars" {
+  "id" integer [not null]
+  "inferred_rcs_pillars" text [not null]
+}
+
+Table "activities_cmms" {
+  "id" integer [not null]
+  "cmms_lines_of_action" text [not null]
+}
+
+Table "activities_beneficiaries" {
+  "id" integer [not null]
+  "key_beneficiaries_targeted" text [not null]
+}
+
+Table "activities_sectors" {
+  "id" integer [not null]
+  "sectors_of_interest" text [not null]
+}
+
+Table "activities_digital" {
+  "id" integer [not null]
+  "digital_ecosystem_linkages" text [not null]
+}
+
+Ref:"activities"."id" < "activities_depts"."id"
+
+Ref:"activities"."id" < "activities_munis"."id"
+
+Ref:"activities"."id" < "activities_ir"."id"
+
+Ref:"activities"."id" < "activities_pillars"."id"
+
+Ref:"activities"."id" < "activities_cmms"."id"
+
+Ref:"activities"."id" < "activities_beneficiaries"."id"
+
+Ref:"activities"."id" < "activities_sectors"."id"
+
+Ref:"activities"."id" < "activities_digital"."id"
+
+Table "exact_site_locations" {
+  "activity_name" text [not null]
+  "activity_id" integer [not null]
+  "latitude" double
+  "longitude" double
+  "location_name" text
+  "start_date" text
+  "end_date" text
+  "location_type" text
+  "location_type_other" text
+  "location_data_type" text
+  "intervention_status" text
+  "intervention_cost" money
+  "intervention_description" text
+  "comments" text
+  "location_description" text
+  "community" text
+  "intervention_type" text
+  "interverntion_type_other" text
+  "sector_subsector" text
+  "beneficiary_type" text
+  "virual" boolean
+  "school_code" text
+  "school_level" text
+  "health_site" text
+  "park_protected_area" text
+  "partner_org" text
+  "submitter_name" text
+  "submitter_email" text
+  "submitted_date" text
+}
+
+Table "admin_unit_areas" {
+  "activity_name" text [not null]
+  "activity_id" integer [not null]
+  "admin_0" text
+  "admin_1" text
+  "admin_2" text
+  "admin_3" text
+  "admin_4" text
+  "admin_5" text
+  "start_date" text
+  "end_date" text
+  "location_type" text
+  "location_type_other" text
+  "location_data_type" text
+  "intervention_status" text
+  "intervention_cost" money
+  "intervention_description" text
+  "comments" text
+  "beneficiary_type" text
+  "submitter_name" text
+  "submitter_email" text
+  "submitted_date" text
+}
+
+Ref:"activities"."id" < "exact_site_locations"."activity_id"
+Ref:"activities"."id" < "admin_unit_areas"."activity_id"
+
+
+

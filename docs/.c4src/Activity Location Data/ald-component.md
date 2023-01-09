@@ -1,0 +1,13 @@
+Activity Location Data include both the location of implementation activities and the location of intended beneficiaries. Implementation activities should be reported at the finest level of granularity possible, usually the exact site location (i.e., latitude and longitude). The location of intended beneficiaries is typically reported at the municipality level. Because these data may contain sensitive information including PII, care should be taken when storing, processing, and sharing.
+
+The **Development Information Solution (DIS)** is the Agency's preferred platform for reporting Activity Location Data. The Data Steward must add all Activities to the DIS to facilitate later reporting. The **DIS** provides a template for reporting Activity Location Data, the **Activity Location Template** (not shown). This template can be used to batch upload Activity Location Data for each Activity. 
+
+To support the specific needs of each technical team, the Data Steward will work with each Technical Team to define additional fields for data collection and the vocabulary of valid inputs. Through this process, the **Activity Location Template** will become a team-specific **Activity Location Tracker**. 
+
+During **Activity Start Up**, the Data Steward will work with the A/COR and Implementing Partner to determine the appropriate frequency and level of geographic detail for reporting Activity Location Data, which will be documented in the **Activity MECLA Plan & DMP** (not shown). The Data Steward will set up the **Activity Folder** and copy the team's **Activity Location Tracker** into the folder. 
+
+At the agreed frequency, the Implementing Partner will submit Activity Location Data using the tracker. The **Activity Location Tracker** includes a custom UI menu to allow Implementing Partners to check that the data they have submitted are valid and conform to the **Data Standards** of the Mission.
+
+Activity Location Data are automatically imported from each **Activity Location Tracker** into a central **Activity Location Compiler**. The Data Steward will ingest the data in **Activity Location Compiler** into the **Mission Database** through a semi-automated pipeline. The **Mission Database** generalizes the Activity Location Data and removes sensitive information so that it can be shared through the **ALD Portal - Public**, a component of the **Data Hub**.
+
+When required, the Implementing Partner will also submit the Activity Location Data to the **DIS** using the **Activity Location Template** with the DIS batch upload process. 
