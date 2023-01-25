@@ -1,0 +1,39 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!include ICONURL/material/border_all.puml
+!include ICONURL/material/folder.puml
+!include ICONURL/material/description.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!include DEVICONS/postgresql.puml
+!include DEVICONS/google_drive.puml
+!include DEVICONS/database.puml
+!include DEVICONS2/javascript.puml
+
+HIDE_STEREOTYPE()
+SET_SKETCH_STYLE($bgColor="white", $footerWarning="Draft", $footerText="Created for discussion")
+LAYOUT_AS_SKETCH()
+LAYOUT_LEFT_RIGHT()
+UpdateElementStyle("", $shadowing="true")
+
+title: "Thematic Data Pipelines"
+
+Person(dataSteward, "Data Steward")
+System_Boundary(thematicDb, "Thematic Database",){
+    Component(thematicData, "Data Assets", "Google Sheets", $sprite="border_all")
+    Component(dataInventory, "Data Inventory", "Google Sheet", $sprite="border_all")
+}
+ContainerDb(postgres, "Mission Database", "PostgreSQL", "Single source of truth for the Mission", $sprite="postgresql")
+System(apps, "Web Apps", "Make data discoverable", $sprite=javascript)
+
+Lay_R(postgres, apps)
+
+Rel(dataSteward, thematicData, "A")
+Rel(dataSteward, dataInventory, "A")
+Rel(thematicData, postgres, "B")
+' Rel(dataInventory, postgres, "B")
+Rel(thematicDb, apps, "C")
+
+@enduml

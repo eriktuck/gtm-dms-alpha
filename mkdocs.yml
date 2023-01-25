@@ -1,7 +1,7 @@
 site_name: Mission Data Management System
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
 edit_uri: edit/main/docs/
-site_description: The Mission Data Management System facilitates a data-informed approach to development.
+site_description: Atlas is an open-source solution for managing the full data lifecycle for Missions. 
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -11,9 +11,10 @@ theme:
   custom_dir: docs/overrides
   features:
     - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    # - navigation.indexes (allows pages associated with section groups)
+    - navigation.indexes # (allows pages associated with section groups)
     - search.share
     - search.suggest
     - search.highlight
@@ -26,20 +27,57 @@ markdown_extensions:
   - md_in_html
   - pymdownx.details
   - pymdownx.snippets
+  - footnotes
+  - attr_list
 
 # Page tree
 nav:
   - 'Home': 'index.md' 
+  - 'Get Started':
+    - 'Installation': pages/get-started/installation.md
+    - 'Setup': 
+      - pages/get-started/setup/index.md
+      - 'Organize Google Drive': 'pages/get-started/setup/setup-drive.md'
+      - 'Setup Activity Database': 'pages/get-started/setup/setup-activitydb.md'
+      - 'Setup Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
+      - 'Setup Thematic Database': 'pages/get-started/setup/setup-thematicdb.md'
+      - 'Setup Mission Database': 'pages/get-started/setup/setup-missiondb.md'
+      - 'Setup Web Applications': 'pages/get-started/setup/setup-webapps.md'
+  - 'Usage':
+    - 'pages/usage/index.md'
   - 'Design':
-    - 'Architecture':
-      - 'Overview': 'pages/architecture/README.md'
-      - 'Activity Data': 'pages/architecture/Activity Data/README.md'
-      - 'Activity Location Data': 'pages/architecture/Activity Location Data/README.md'
-      - 'Performance Measures': 'pages/architecture/Performance Measures/README.md'
-      - 'Thematic Data': 'pages/architecture/Thematic Data/README.md'
-    - 'Pipelines': 'pages/pipelines/pipelines.md'
-
-  #   - 'Components':
-  # - 'Usage':
-  #   - 'Setup': # link from home; or put getting started a top level
-  # - 'Knowledge Base':
+    - 'Architecture': 
+      - 'pages/design/Architecture/README.md'
+      - 'Activity Data': 'pages/design/Architecture/Activity Data/README.md'
+      - 'Activity Location Data': 'pages/design/Architecture/Activity Location Data/README.md'
+      - 'Performance Measures': 'pages/design/Architecture/Performance Measures/README.md'
+      - 'Thematic Data': 'pages/design/Architecture/Thematic Data/README.md'
+    - 'Pipelines': 
+      - 'pages/design/Pipelines/README.md'
+      - 'Activity Data': 'pages/design/Pipelines/Activity Data/README.md'
+      - 'Activity Location Data': 'pages/design/Pipelines/Activity Location Data/README.md'
+      - 'Thematic Data': 'pages/design/Pipelines/Thematic Data/README.md'
+    - 'Components': 
+      - 'pages/components/index.md'
+      - 'Mission Database': 'pages/components/mission-database.md'
+      - 'Activity Folder': 'pages/components/activity-folder.md'
+      - 'Data Steward Admin Tool': 'pages/components/data-steward-admin.md'
+      - 'Activity Database': 'pages/components/activity-database.md'
+      - 'Thematic Database': 'pages/components/thematic-database.md'
+  - 'Knowledge':
+    - 'Knowledge Base':
+      - 'pages/knowledge/base/index.md'
+      - 'Database Options': 'pages/knowledge/base/database-rationale.md'
+      - 'Pipeline Options': 'pages/knowledge/base/data-pipeline-rationale.md'
+      - 'PostgreSQL': 'pages/knowledge/base/postgres.md'
+      - 'pgAdmin': 'pages/knowledge/base/pgAdmin.md'
+      - 'PSQL': 'pages/knowledge/base/psql.md'
+      - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
+      - 'SQL': 'pages/knowledge/base/SQL.md'
+      - 'Latin Characters': 'pages/knowledge/base/latin-characters.md'
+      - 'H3': 'pages/knowledge/base/h3.md'
+      - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
+      - 'Staging Data': 'pages/knowledge/base/staging-data.md'
+    - 'Playbook':
+      - 'pages/knowledge/playbook/index.md'
+      - 'Stakeholder Engagement': 'pages/knowledge/playbook/stakeholder-engagement.md'

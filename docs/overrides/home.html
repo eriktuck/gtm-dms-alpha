@@ -59,12 +59,12 @@
     }
 
     /* Parallax */
-    body
+    /* body
     {
       overflow-x: hidden;
       background: white;
       min-height: 100vh;
-    }
+    } */
 
     /* #header
     {
@@ -78,7 +78,7 @@
       align-items: center;
     } */
 
-    .mdx-hero__image{
+    /* .mdx-hero__image{
       position: relative;
       width: 100%;
       min-height: 60vh;
@@ -96,74 +96,157 @@
       height: 100%;
       object-fit: coverage;
       pointer-events: none;
+    } */
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .column {
+      flex: 100%;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (min-width: 600px) {
+      .column {
+        flex: 50%;
+      }
     }
     
   </style>
 
   <!-- Hero for landing page -->
-  <div class="wrapper">
     <section class="mdx-container">
     
       <div class="md-grid md-typeset">
         
         <div class="mdx-hero">
-
-         
-
-          <!-- Hero image -->
-          <div class="mdx-hero__image">
-            <img
-              id="people"
-              src="assets/9267-removebg-preview.png"
-              alt="people standing"
-              width="1200"
-              height="650"
-              draggable="false"
-            >
-            <img
-              id="map"
-              src="assets/59853-removebg-preview (3).png"
-              alt="map of the world"
-              width="1200"
-              height="650"
-              draggable="false"
-            >            
-          </div>
           
-           <!-- Hero content -->
-           <div class="mdx-hero__content">
-            <h1>Atlas: A Mission Data Management Solution</h1>
-            <p>{{ config.site_description }}</p>
-            <a
-              href="{{ page.next_page.url | url }}"
-              title="{{ page.next_page.title | e }}"
-              class="md-button md-button--primary"
-            >
-              Get Started
-            </a>
-            <a
-              href="{{ 'insiders/' | url }}"
-              title="Material for MkDocs Insiders"
-              class="md-button"
-            >
-              Learn More
-            </a>
+          <div class="row">
+            <div class="column">
+              <!-- Hero content -->
+                <div class="mdx-hero__content">
+                  <h1>ATLAS | A Mission Data Management Solution</h1>
+                  <p>{{ config.site_description }}</p>
+                  <br>
+                  <a
+                    href="{{ page.next_page.url | url }}"
+                    title="{{ page.next_page.title | e }}"
+                    class="md-button md-button--primary"
+                  >
+                    Get Started
+                  </a>
+                  <a
+                    href="#features"
+                    title="Learn More"
+                    class="md-button"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+              <!-- Hero image -->
+              <div class="column">
+                <div class="mdx-hero__image">
+                  <img style="margin: 0px"
+                    id="people"
+                    src="assets/43034.jpg"
+                    alt="people standing"
+                    width="1200"
+                    height="650"
+                    draggable="false"
+                  >
+                  <!-- <img
+                    id="map"
+                    src="assets/59853-removebg-preview (3).png"
+                    alt="map of the world"
+                    width="1200"
+                    height="650"
+                    draggable="false"
+                  >             -->
+                  <p style="font-size: .75em; text-align: right; margin: 0px; color: lightblue">
+                    <a 
+                    style="color: lightblue" 
+                    href="https://www.freepik.com/free-vector/character-illustration-diverse-people-world_3585388.htm#query=people%20map&position=0&from_view=search&track=sph">
+                    Image by rawpixel.com
+                    </a> 
+                    on Freepik
+                  </p>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
+    <section style="background-color: #ececec">
+      <div class="md-grid md-typeset" id="features">
+        <h2>Empower teams with a data-informed, geographic approach to development</h2>
+        <div class="row" >
+          <div class="column">
+            <h3><b>Brings all your data together</b></h3>
+            <p>Answer questions in seconds when all of your data are in one place.</p>
+          </div>
+          <div class="column">
+            <h3><b>Free, open source and easy to deploy</b></h3>
+            <p>Atlas is designed specifically for use on federal information technology systems.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3><b>Built from the tools you know</b></h3>
+            <p>Atlas employs the Google Workplace tools you already use.</p>
+          </div>
+          <div class="column">
+            <h3><b>Integrated with Agency systems</b></h3>
+            <p>Atlas integrates with and extends existing Agency systems.</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </section>
 
-  <div class="content">
-    <h1>Here's a Header</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus suscipit reiciendis, quasi tenetur incidunt voluptatum qui assumenda eligendi perferendis expedita reprehenderit asperiores alias facere dolorem nemo atque. Eum, quam alias.</p>
-    <br><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolore veritatis veniam deserunt possimus odit autem quo natus quam modi iste sapiente incidunt debitis voluptatum, magni at unde obcaecati! Eum.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta blanditiis consequatur ut dolore aliquam obcaecati unde, fuga mollitia, corrupti nesciunt debitis voluptatem sed necessitatibus minima qui soluta quam at nobis alias quis amet hic? Similique laudantium consectetur blanditiis cupiditate fuga temporibus consequuntur, aut alias autem sed quibusdam optio aperiam dolores, voluptas illum. Et eligendi quam aperiam, iste officiis sed veritatis ea, inventore fugit ullam voluptas quod debitis dolorum porro odio delectus! Voluptates sint ullam in amet aut iure voluptate, beatae odit rerum maiores natus blanditiis quas quos itaque voluptatum magnam quaerat laboriosam. Cum delectus, reprehenderit corporis consequatur similique vel eveniet sequi laudantium laboriosam blanditiis facilis ad veniam minus? Aliquam modi ipsa consequatur inventore quas a repudiandae cumque, ea recusandae sit corporis minus, voluptate quam dolores minima illo deleniti iste? Numquam autem magnam veniam culpa rerum, eveniet a nulla provident praesentium eos explicabo vel cupiditate sint similique magni accusantium modi aliquid consectetur excepturi? Corrupti deleniti nam dicta explicabo? Soluta, sit quas! Vero beatae repellendus nostrum, minima, amet exercitationem ratione animi quia sequi velit quaerat, libero necessitatibus et! Ipsam necessitatibus, odio, nemo dolorum eos blanditiis fugiat voluptatum alias iusto iure totam esse quidem quam ea magni similique harum aut earum minus voluptatibus maxime ad! Adipisci, in minus. Consequatur ipsum sapiente temporibus culpa tempore veritatis, cumque voluptatibus aspernatur molestias tempora possimus. Praesentium cupiditate sunt nihil nemo suscipit, porro enim repellat! Rem a dolore autem dolorum earum? Obcaecati ipsum, architecto explicabo, unde, eum vitae doloribus consectetur quos fugiat quam fugit nam ullam illum! Qui.</p>
-  </div>
+    <section>
+      <div class="md-grid md-typeset">
+        <h2>Solutions not software</h2>
+        <br>
+        <p>ATLAS is not software. ATLAS is a comprehensive data management solution - a new paradigm for Mission data management.</p>
+        <p>
+          Successful implementation of ATLAS requires participation of the entire Mission. 
+          Read more about the enabling environment required for ATLAS and discover strategies for 
+          supporting organizational change in your Mission with the 
+          <a
+          href="pages/knowledge/playbook/">
+            Playbook.
+          </a>
+          Develop the skills needed to deploy and maintain Atlas with the
+          <a href="pages/knowledge/base/">
+            Knowledge Base.      
+          </a>
+        </p>
+        <br>
+      </div>
+    </section>
 
-  <script>
+    <hr></hr>
+    
+    <footer style="background-color: #002F6C">
+      <div class="md-grid md-typeset" >
+        <br>
+        <p style="font-size: .75em; color: white">
+          <em>
+          Disclaimer: Atlas is in testing. Atlas is the sole responsibility of the author. 
+          Not endorsed or approved by anyone. Use at your own risk. Secure necessary approvals before installing any software or uploading any data.
+          </em>
+        </p>
+      </div>
+    <!-- </footer> -->
+
+  
+
+  <!-- <script>
     let text = document.getElementsByClassName('mdx-hero__content')[0]
     let people = document.getElementById('people')
     let map = document.getElementById('map')
@@ -174,7 +257,7 @@
       people.style.top = value * -.5 + 'px'
       map.style.top = value * -1 + 'px'
     })
-  </script>
+  </script> -->
 {% endblock %}
 
 <!-- Content -->

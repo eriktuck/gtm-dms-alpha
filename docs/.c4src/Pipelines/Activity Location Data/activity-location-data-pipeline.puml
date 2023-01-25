@@ -1,0 +1,46 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!include ICONURL/material/border_all.puml
+!include ICONURL/material/folder.puml
+!include ICONURL/material/description.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!include DEVICONS/postgresql.puml
+!include DEVICONS/google_drive.puml
+!include DEVICONS/database.puml
+' !include DEVICONS2/google.puml
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!include DEVICONS2/javascript.puml
+
+HIDE_STEREOTYPE()
+SET_SKETCH_STYLE($bgColor="white", $footerWarning="Draft", $footerText="Created for discussion")
+LAYOUT_AS_SKETCH()
+LAYOUT_LEFT_RIGHT()
+UpdateElementStyle("", $shadowing="true")
+
+title: "Activity Location Data Pipelines"
+
+Person(ip, "Implementing Partner")
+System_Boundary(activityFolder, "Activity Folder"){
+    Component(aldTracker, "Activity Location Tracker", "Google Sheets", "Report Activity Location Data", $sprite="border_all")
+    ' Component(activityMELP, "Activity MECLA Plan & DMP", "Google Doc", "Activity MECLA and Data Management Plan", $sprite="description")
+}
+Component(aldCompiler, "Activity Location Compiler ", "Google Sheets", "Compile Activity Location Data", $sprite="border_all")
+System_Boundary(dataHub, "Data Hub"){
+    Component(aldPortal, "ALD Portal - Public", "Google Apps Script", "Share generalized Activity Location Data", $sprite="javascript")
+}
+
+ContainerDb(postgres, "Mission Database", "PostgreSQL", "Aggregate all data", $sprite="postgresql")
+Component(activityInventory, "Activity Folder Inventory", "Google Sheets", "Inventory of Activity Folders", $sprite="border_all")
+Component(aldClean, "Generalized Activity Location Data", "Google Sheets", "Protect sensitive activity location data", $sprite="border_all")
+
+Rel(ip, aldTracker, "A")
+Rel(aldTracker, aldCompiler, "B")
+Rel_L(aldCompiler, postgres, "C")
+Rel(postgres, postgres, "D")
+Rel(postgres, aldClean, "E")
+Rel(aldClean, aldPortal, "F")
+Rel_U(activityInventory, aldCompiler, "B")
+
+@enduml

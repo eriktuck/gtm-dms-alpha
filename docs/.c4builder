@@ -1,8 +1,8 @@
 {
 	"projectName": "Guatemala DMS Alpha",
-	"homepageName": "Overview",
+	"homepageName": "Design",
 	"rootFolder": ".c4src",
-	"distFolder": "pages/architecture",
+	"distFolder": "pages/design",
 	"generateMD": true,
 	"generatePDF": false,
 	"generateCompleteMD": false,
