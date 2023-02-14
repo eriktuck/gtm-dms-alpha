@@ -2,6 +2,10 @@
 
 Developing a solution does not guarantee that intended users will use the solution. Both primary users and stakeholders (secondary users) must be engaged to promote awareness of the product, learn how to use the product, and tailor the product to meet their needs.
 
+This template Stakeholder Engagement Plan will help you plan for the roll out of a new tool or product.
+
+## Overview
+
 Provide a high level description of the plan to keep users engaged.
 
 ## Communication Plan

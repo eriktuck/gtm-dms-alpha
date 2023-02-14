@@ -1,9 +1,5 @@
 # Installation
 
-ATLAS requires Google Workspace and PostgreSQL. 
-
-Advanced users may install Miniconda and Git (including GitBash) for additional functionality. Create a GitHub account to customize and share your own version of this documentation. 
-
 Follow the instructions below to install PostgreSQL. Before installing any software, request permission from your system administrator if required.
 
 ## Install PostgreSQL

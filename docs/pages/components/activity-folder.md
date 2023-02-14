@@ -9,13 +9,14 @@ Detailed instructions for working with A/CORs and Implementing Partners are prov
 
 ## Folder Structure
 
-The structure outlined below is the recommended Activity Folder structure. Additional folders may be included to meet the specific needs of the activity.
+The structure outlined below is the recommended Activity Folder structure. Additional folders and subfolders may be included to meet the specific needs of the activity.
 
 ```bash
 *
 +-- datasets/
     +-- implementation-activities.gsheet
     +-- beneficiaries.gsheet
++-- archive/
 +-- Data-Inventory.gsheet
 +-- Activity-MECLA-Plan-DMP.gdoc
 +-- Activity-Location-Data-Template.gsheet
@@ -25,6 +26,7 @@ The structure outlined below is the recommended Activity Folder structure. Addit
 ### Components
 
 * **Datasets Folder:** the datasets folder stores all data assets collected or utilized by the Implementing Partner. Here we illustrate two very common data assets collected by Implementing Partners: a list of the implementation activities and a list of beneficiaries. These datasets support both activity location data and performance monitoring.
+* **Archive Folder:** store past Activity Monitoring, Evaluation and Learning Plans (AMPELPs) and other expired documents.
 * **Data Inventory:** this Google Sheet lists and provides metadata for each data asset. The Data Inventory is created during development of the Data Management Plan.
 * **Activity MECLA & Data Management Plan:** this document helps Implementing Partners plan for MECLA activities and data management.
 * **Activity Location Data Template:** this Google Sheet is the standard template for collecting Activity Location Data.

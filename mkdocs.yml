@@ -1,4 +1,4 @@
-site_name: Mission Data Management System
+site_name: Mission Data Management Solution
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
 edit_uri: edit/main/docs/
 site_description: Atlas is an open-source solution for managing the full data lifecycle for Missions. 
@@ -34,17 +34,17 @@ markdown_extensions:
 nav:
   - 'Home': 'index.md' 
   - 'Get Started':
+    - 'pages/get-started/index.md'
     - 'Installation': pages/get-started/installation.md
     - 'Setup': 
       - pages/get-started/setup/index.md
-      - 'Organize Google Drive': 'pages/get-started/setup/setup-drive.md'
-      - 'Setup Activity Database': 'pages/get-started/setup/setup-activitydb.md'
-      - 'Setup Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
-      - 'Setup Thematic Database': 'pages/get-started/setup/setup-thematicdb.md'
-      - 'Setup Mission Database': 'pages/get-started/setup/setup-missiondb.md'
-      - 'Setup Web Applications': 'pages/get-started/setup/setup-webapps.md'
+      - '1. Set Up Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
+      - '2. Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
+      - '3. Set Up Mission Database': 'pages/get-started/setup/setup-missiondb.md'
+      - '4. Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
   - 'Usage':
     - 'pages/usage/index.md'
+    - 'Update Mission Database': 'pages/usage/regular.md'
   - 'Design':
     - 'Architecture': 
       - 'pages/design/Architecture/README.md'
@@ -63,7 +63,12 @@ nav:
       - 'Activity Folder': 'pages/components/activity-folder.md'
       - 'Data Steward Admin Tool': 'pages/components/data-steward-admin.md'
       - 'Activity Database': 'pages/components/activity-database.md'
+      - 'Activity Location Data Tracker': 'pages/components/activity-location-tracker.md'
+      - 'Activity Location Data Compiler': 'pages/components/activity-location-compiler.md'
       - 'Thematic Database': 'pages/components/thematic-database.md'
+      - 'Data Catalog': 'pages/components/data-catalog.md'
+      - 'Map Viewer': 'pages/components/map-viewer.md'
+      - 'Activity Location Data Portal (Public)': 'pages/components/ald-portal-public.md'
   - 'Knowledge':
     - 'Knowledge Base':
       - 'pages/knowledge/base/index.md'

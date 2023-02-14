@@ -19,8 +19,6 @@ Add the necessary extensions. Run these commands after connecting to the databas
 ```sql
 CREATE EXTENSION postgis;
 CREATE EXTENSION postgis_raster;
-CREATE EXTENSION "uuid-ossp"
-CREATE EXTENSION h3
 ```
 
 Using the [Data Steward Admin Tool](../../components/data-steward-admin.md), create the SQL files to load data from each data source.

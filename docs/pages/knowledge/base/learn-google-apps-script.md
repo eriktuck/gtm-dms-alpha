@@ -1,0 +1,3 @@
+# Learning Google Apps Script
+
+To learn Google Apps Script, go to the [Beginner's Guide](https://www.benlcollins.com/apps-script/google-apps-script-beginner-guide/), the [New Apps Script Editor](https://www.benlcollins.com/apps-script/google-apps-script-ide/) guide, the [Fundamentals of Apps Script with Google Sheets](https://developers.google.com/codelabs/apps-script-fundamentals-1) codelab, the [Extending Google Sheets](https://developers.google.com/apps-script/guides/sheets) page, [javascript.info](https://javascript.info/), [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript).
