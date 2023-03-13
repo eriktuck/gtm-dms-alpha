@@ -8,7 +8,7 @@ See [How to Update the Thematic Database](../../../usage/update-thematic-db.md) 
 ## B
 Using the Data Steward Admin Tool, the Data Steward runs a semi-automated data pipeline to [truncate and load](../../../knowledge/base/truncate-load.md) Data Assets from the Thematic Database to the Mission Database when new data are added.
 
-This pipeline creates the `create_thematic_data.sql` and `load_thematic_data.sql` files stored in the [Data Admin SQL](https://drive.google.com/drive/folders/1wq14SGZLO6lrxefJ3ryR4TpJ5pErCpol?lfhs=2) folder. The `load_thematic_data.sql` file contains the SQL commands to truncate and load data into the Mission Database. The Data Steward uses [psql](../../../knowledge/base/psql.md) to load data in [pgAdmin4](../../../knowledge/base/pgAdmin.md).
+This pipeline creates the `create_thematic_data.sql` and `load_thematic_data.sql` files stored in the Data Admin SQL folder. The `load_thematic_data.sql` file contains the SQL commands to truncate and load data into the Mission Database. The Data Steward uses [psql](../../../knowledge/base/psql.md) to load data in [pgAdmin4](../../../knowledge/base/pgAdmin.md).
 
 See [Usage](../../../usage/index.md) for detailed instructions on running semi-automated data pipelines. 
 

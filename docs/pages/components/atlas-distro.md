@@ -27,20 +27,23 @@ Atlas Distro/
         +-- Activity Database.gsheet
         +-- FormGen.gsheet
         +-- TableGen.gsheet
+        +-- adb_stage.gsheet
     +-- Activity Location Data/
-        +-- ALD Compiler.gsheet
-        +-- ALD Public.gsheet
+        +-- Activity Location Data Compiler.gsheet
+        +-- Activity Location Data (Public).gsheet
         +-- ALD Inventory.gsheet
+        +-- ald_stage.gsheet
     +-- Performance Measures/ 
         +-- // Contents TBD
     +-- Activity Folder [Template]/
         +-- datasets/
         +-- Activity MECLA Plan DMP.gdoc
         +-- Activity Data Inventory.gsheet
-        +-- Activity Location Data Tracker.gsheet
+        +-- Activity Location Data Tracker vX.x.gsheet
         +-- Activity PM Tracker.gsheet // TBD
 +-- Admin/
     +-- SQL/
+    +-- tmp/
 +-- Atlas Data Inventory.gsheet
 +-- README.gdoc
 ```
@@ -49,6 +52,6 @@ Atlas Distro/
 
 * Migrate DMP Guide to Knowledge Base? 
 * What other guidance documents are on Google Drive?
-* Get the `Admin/SQL/` folder programmatically or add update to setup (Activity Database `backup` also)
+* Get the `Admin/SQL/` folder ID programmatically or add update to setup (Activity Database `backup` also)
 * Could we add a module to Activity DB to create an Activity Folder?
 

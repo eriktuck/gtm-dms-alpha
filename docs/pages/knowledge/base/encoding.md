@@ -1,12 +1,24 @@
-# Working with Latin characters
+# Encoding
 
-Use either UTF8 or LATIN9 when working with Latin languages (e.g., Spanish, Italian). Google Sheets uses UTF8, so go with that unless you specifically need LATIN9. 
+UTF-8 or LATIN1 are common encodings, where LATIN1 is often used when working with Latin languages (e.g., Spanish, Italian). Google Sheets uses UTF-8, so go with that unless you specifically need LATIN1. 
 
-To set UTF 8 as the database encoding with [psql](psql.md) use the following command. This must be set for each session, as the default is the encoding of your operating system.
+Google Sheets and Tableau expect encoding UTF-8, data may not display correctly if encoded in another encoding.
+
+When importing data to a Google Sheet from another source (e.g., Excel), use the Import function (File > Import) to add data rather than copy/paste. 
+
+## Set encoding for Mission Database
+
+To set UTF-8 as the database encoding with [psql](psql.md) use the following command. This must be set for each session, as the default is the encoding of your operating system.
 
 ```
 \encoding UTF8
 ```
+
+## Determining encoding
+
+Encoding cannot be reliably determined just by looking at a file, unless the encoding is stored in the metadata. Instead, you may need to guess and check. You will often get errors refering to invalid byte sequences if you have the wrong encoding. 
+
+## White listing text
 
 White list text characters before importing if you continue to have encoding errors. In some rare cases, a string might contain a byte sequence that cannot be encoded with your chosen coding scheme and the character does not appear when you review the data in the data source.  
 

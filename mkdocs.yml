@@ -1,7 +1,7 @@
-site_name: Mission Data Management Solution
+site_name: Atlas
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
 edit_uri: edit/main/docs/
-site_description: Atlas is an open-source solution for managing the full data lifecycle for Missions. 
+site_description: Activity-level data management solutions for the full data lifecycle. 
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -10,6 +10,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   features:
+    - navigation.expand
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
@@ -29,22 +30,31 @@ markdown_extensions:
   - pymdownx.snippets
   - footnotes
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 # Page tree
 nav:
   - 'Home': 'index.md' 
   - 'Get Started':
-    - 'pages/get-started/index.md'
-    - 'Installation': pages/get-started/installation.md
+    - 'Setup Overview': 'pages/get-started/overview.md'
+    - 'Requirements': 'pages/get-started/requirements.md'
     - 'Setup': 
-      - pages/get-started/setup/index.md
-      - '1. Set Up Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
-      - '2. Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
-      - '3. Set Up Mission Database': 'pages/get-started/setup/setup-missiondb.md'
-      - '4. Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
+      - 'Set Up Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
+      - 'Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
+      - 'Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
+      - 'Next Steps': 'pages/get-started/setup/setup-next-steps.md'
+    - 'Setup Optional':
+      - 'Install Postgres': 'pages/get-started/setup-optional/install-postgres.md'
+      - 'Set up Mission Database': 'pages/get-started/setup-optional/setup-missiondb.md'
   - 'Usage':
-    - 'pages/usage/index.md'
-    - 'Update Mission Database': 'pages/usage/regular.md'
+    - 'Usage Overview': 'pages/usage/overview.md'
+    - 'Update Thematic Database': 'pages/usage/update-thematicdb.md'
+    - 'Onboard an Activity': 'pages/usage/onboard-activity.md'
+    - 'Update Activity Database': 'pages/usage/update-activitydb.md'
+    - 'Update Mission Database': 'pages/usage/update-missiondb.md'
+    - 'Update Atlas Documentation': 'pages/usage/update-docs.md'
   - 'Design':
     - 'Architecture': 
       - 'pages/design/Architecture/README.md'
@@ -79,10 +89,14 @@ nav:
       - 'PSQL': 'pages/knowledge/base/psql.md'
       - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
       - 'SQL': 'pages/knowledge/base/SQL.md'
-      - 'Latin Characters': 'pages/knowledge/base/latin-characters.md'
+      - 'Encoding': 'pages/knowledge/base/encoding.md'
       - 'H3': 'pages/knowledge/base/h3.md'
       - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
       - 'Staging Data': 'pages/knowledge/base/staging-data.md'
+      - 'Stakeholder Engagement': 'pages/knowledge/base/stakeholder-engagement.md'
     - 'Playbook':
       - 'pages/knowledge/playbook/index.md'
-      - 'Stakeholder Engagement': 'pages/knowledge/playbook/stakeholder-engagement.md'
+      - 'Catalog Data': 'pages/knowledge/playbook/inventory-data.md'
+      - 'Launch Activity Database': 'pages/knowledge/playbook/launch-adb.md'
+      - 'Onboard Activities': 'pages/knowledge/playbook/onboard-activities.md'
+      

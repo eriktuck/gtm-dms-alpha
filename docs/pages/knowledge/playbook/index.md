@@ -1,8 +1,30 @@
 # Playbook
 
-<img style="float: right; width: 30%" src=../../../assets/20943566.jpg>
-<p>
-Creating change is hard. The plays in this Playbook are intended to help the Data Steward promote a data-informed, geographic approach to development in the Mission.
-</p>
+The plays in this Playbook support the Data Steward during initial onboarding of the Mission to Atlas and to develop a culture and develop the capacity and culture required to empower teams with a data-informed, geographic approach to development.
 
-<span style="color: lightblue; font-size: .75em;"><a href="https://www.freepik.com/free-vector/corporate-meeting-employees-cartoon-characters-discussing-business-strategy-planning-further-actions-brainstorming-formal-communication-seminar-concept-illustration_11668427.htm#&position=30&from_view=author" style="color: lightblue">Image by vectorjuice</a> on Freepik</span>
+## Onboarding
+
+vary based on current compliance with ADS and use of Agency systems
+
+Conduct a stocktaking
+
+Inventory existing and available data
+
+Create the enabling conditions
+
+Develop Data Standards
+
+Launch the Activity Database
+
+Onboard existing Activities
+
+Onboard new Activities
+
+## Ongoing
+
+* Continuous Improvement
+
+## Additional Engagement
+
+* Develop a page on MyUSAID to promote Atlas with Mission stakeholders
+* Develop a public Data Hub site

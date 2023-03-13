@@ -13,7 +13,7 @@ The Data Steward will acquire publicly available datasets from public institutio
 
 Thematic data are produced by partners during the course of their work. Any datasets used to support an Intellectual Work[^2], calculate Performance Measures, or not otherwise defined are considered thematic data. Not all thematic data produced by partners will have secondary analysis value. The Data Steward will determine which datasets to include in the Thematic Database and include them once cleared.
 
-See [Usage: Update the Thematic Database](../usage/update-thematic-db.md) for detailed instructions on adding data to the Thematic Database.
+See [Usage: Update the Thematic Database](../usage/update-thematicdb.md) for detailed instructions on adding data to the Thematic Database.
 
 ## Internal & External Datasets
 
