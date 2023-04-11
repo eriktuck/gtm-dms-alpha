@@ -21,11 +21,11 @@ Atlas employs two common data pipeline strategies to load data into the Mission 
 
 ### Truncate & Load
 
-[Truncate and load](../../knowledge/base/truncate-load.md) simply means deleting all existing records and loading the data fresh from the data source.
+Truncate and load simply means deleting all existing records and loading the data fresh from the data source.
 
 ### Upsert
 
-[Upsert](../../knowledge/base/upsert.md) (a portmanteau of update and insert) will update existing records and insert new records. Upsert is used by Atlas when necessary to maintain referential integrity with foreign key constraints. For example, activity data from the Activity Database is upserted into the Mission Database so that other tables that reference the Activity ID field are not affected. When using upsert, it's essential that the record identifier in the data source is never changed.
+Upsert (a portmanteau of update and insert) will update existing records and insert new records. Upsert is used by Atlas when necessary to maintain referential integrity with foreign key constraints. For example, activity data from the Activity Database is upserted into the Mission Database so that other tables that reference the Activity ID field are not affected. When using upsert, it's essential that the record identifier in the data source is never changed.
 
 ## Pipelines to Web Applications
 

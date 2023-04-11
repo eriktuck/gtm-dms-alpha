@@ -46,11 +46,11 @@ When adding data to the Data Catalog Google Sheet, do not check the box in the c
 
 ### Data Standards
 
-Whenever possible, use the Mission Data Standards when coding data. The Agency has data standards for gender, age and other variables. Missions will have additional data standards, including standard administrative boundary names.
+Whenever possible, use the [Mission Data Standards](../components/data-standards.md) when coding data. The Agency has data standards for gender, age and other variables. Missions will have additional data standards, including standard administrative boundary names.
 
 ### Encoding
 
-Save files with [encoding](encoding.md) UTF-8.
+Save files with [encoding](../knowledge/base/encoding.md) UTF-8.
 
 ### Translation
 
@@ -116,7 +116,7 @@ Follow the [data flow for atlas](#data-flow-for-atlas) to download, log and uplo
 1. Access the raw file in your GIS tool of choice.
 2. Visualize or otherwise review the data to familiarize yourself with the data and its attributes.
 3. If needed, construct a geometry for the file from spatial data in the file (most commonly from a latitude and longitude column).
-4. Check the [coordinate reference system (CRS)](crs.md). If a CRS is not already associated with the data, review the data source's documentation and the data's metadata. See this Google Colab [notebook](https://colab.research.google.com/drive/1IKSLavz_wJrppbYl32kfZaZWo8f-ZAke?usp=sharing) for an example from Guatemala. 
+4. Check the [coordinate reference system (CRS)](../knowledge/base/crs.md). If a CRS is not already associated with the data, review the data source's documentation and the data's metadata. See this Google Colab [notebook](https://colab.research.google.com/drive/1IKSLavz_wJrppbYl32kfZaZWo8f-ZAke?usp=sharing) for an example from Guatemala. 
 5. Reproject to WGS 84 (EPSG code 4326). WGS 84 is the required CRS for geographic data submitted to the federal government (see [ADS 579saa](https://www.usaid.gov/about-us/agency-policy/series-500/references-chapter/579saa)). In addition, spatial data in this CRS can be visualized directly within PostgreSQL and is the expected CRS for web mapping applications.
 6. Rename columns if needed to better communicate the contents of each field. Note that for shapefiles, column names greater than 10 characters will be truncated.
 7. Remap column values and data types if needed. Whenever possible, encode as much information as possible within the data itself. We are far more interested with human readability than with storage efficiency.

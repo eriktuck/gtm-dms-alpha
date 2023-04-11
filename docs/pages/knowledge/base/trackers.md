@@ -19,7 +19,7 @@ Basic trackers are intended for short-term use and rarely for external data coll
 
 **Use separators that can be split:** In some cases, you may need to put multiple values in a single cell (e.g., a list of relevant geographies). You should be able to use a [`SPLIT`](https://support.google.com/docs/answer/3094136?hl=en) function to split the cell into multiple cells, each with one entry, by using a separator such as a pipe (“|”). 
 
-**Use existing standards for common data types:** if you’re collecting data on a common data type, use appropriate [Mission Data Standards](data-standards.md) for that field. 
+**Use existing standards for common data types:** if you’re collecting data on a common data type, use appropriate [Mission Data Standards](../../components/data-standards.md) for that field. 
 
 **Use consistent #N/A values:** use a consistent #N/A value. The default choice for Google Sheets is “#N/A”. It’s best practice to not leave any fields blank.
 
