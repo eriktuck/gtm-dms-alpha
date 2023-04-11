@@ -5,7 +5,7 @@ Follow the guidance below to add new data to the thematic database or update exi
 Workflows are provided to 
 
 * [Add tabular data](#add-tabular-data)
-* [Add spatial data](#process-spatial-data)
+* [Add spatial data](#spatial-data-processing-steps)
 * [Add reports](#add-reports)
 * [Add a calculated field](#add-a-calculated-field)
 * [Add an external link](#add-an-external-link)

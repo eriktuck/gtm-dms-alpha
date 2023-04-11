@@ -58,7 +58,7 @@ Proceed with the daily update process, downloading and uploading the `.sql` file
 
 Spatial data include shapefiles and raster files. Augmenting tabular data with relevant spatial data will support geospatial analysis. The extensions installed previously including `postgis` and `postgis_raster` are needed to support spatial data in PostgreSQL. Spatial data may be read in using the command line or the application *PostGIS Bundle Shapefile and DBF Importer* which was installed with PostGIS. 
 
-Spatial data must first be processed and stored in the Thematic Database before being read into the Mission Database. See the knowledge article [Processing Spatial Data](../knowledge/base/process-spatial-data.md) for details.
+Spatial data must first be [processed and stored](../usage/update-thematicdb.md#spatial-data-processing-steps) in the Thematic Database before being read into the Mission Database. 
 
 ### Load shapefiles
 
