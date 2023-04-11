@@ -45,14 +45,14 @@ nav:
       - 'Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
       - 'Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
       - 'Next Steps': 'pages/get-started/setup/setup-next-steps.md'
-    - 'Setup Optional':
+    - 'Optional Setup':
       - 'Install Postgres': 'pages/get-started/setup-optional/install-postgres.md'
       - 'Set up Mission Database': 'pages/get-started/setup-optional/setup-missiondb.md'
   - 'Usage':
     - 'Usage Overview': 'pages/usage/overview.md'
     - 'Update Thematic Database': 'pages/usage/update-thematicdb.md'
-    - 'Onboard an Activity': 'pages/usage/onboard-activity.md'
     - 'Update Activity Database': 'pages/usage/update-activitydb.md'
+    - 'Onboard an Activity': 'pages/usage/onboard-activity.md'
     - 'Update Mission Database': 'pages/usage/update-missiondb.md'
     - 'Update Atlas Documentation': 'pages/usage/update-docs.md'
   - 'Design':
@@ -82,21 +82,30 @@ nav:
   - 'Knowledge':
     - 'Knowledge Base':
       - 'pages/knowledge/base/index.md'
-      - 'Database Options': 'pages/knowledge/base/database-rationale.md'
-      - 'Pipeline Options': 'pages/knowledge/base/data-pipeline-rationale.md'
-      - 'PostgreSQL': 'pages/knowledge/base/postgres.md'
-      - 'pgAdmin': 'pages/knowledge/base/pgAdmin.md'
-      - 'PSQL': 'pages/knowledge/base/psql.md'
       - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
-      - 'SQL': 'pages/knowledge/base/SQL.md'
+      - 'Continual Improvement': 'pages/knowledge/base/continual-improvement.md'
+      - 'Coordinate Reference Systems': 'pages/knoweldge/base/crs.md'
+      - 'Data Standards': 'pages/knoweldge/base/data-standards.md'
+      - 'Database Options': 'pages/knowledge/base/database-rationale.md'
       - 'Encoding': 'pages/knowledge/base/encoding.md'
+      - 'Google Apps Script': 'pages/knowledge/base/google-apps-script.md'
       - 'H3': 'pages/knowledge/base/h3.md'
       - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
+      - 'Naming Conventions': 'pages/knowledge/base/naming-conventions.md'
+      - 'Null Values': 'pages/knowledge/base/null-values.md'
+      - 'pgAdmin': 'pages/knowledge/base/pgAdmin.md'
+      - 'PostgreSQL': 'pages/knowledge/base/postgres.md'
+      - 'PSQL': 'pages/knowledge/base/psql.md'
+      - 'Pipeline Options': 'pages/knowledge/base/data-pipeline-rationale.md'
+      - 'raster2pgsql': 'pages/knowledge/base/raster2pgsql.md'
+      - 'shp2pgsql': 'pages/knowledge/base/shp2pgsql.md'
+      - 'SQL': 'pages/knowledge/base/SQL.md'
       - 'Staging Data': 'pages/knowledge/base/staging-data.md'
       - 'Stakeholder Engagement': 'pages/knowledge/base/stakeholder-engagement.md'
+      - 'Trackers': 'pages/knowledge/base/trackers.md'
+    - 'Tutorials':
+      - 'Tableau': 'pages/knowledge/tutorials/tableau-tutorial.md'
+      - 'Google Apps Script': 'pages/knowledge/tutorials/google-apps-script-tutorial.md'
     - 'Playbook':
       - 'pages/knowledge/playbook/index.md'
-      - 'Catalog Data': 'pages/knowledge/playbook/inventory-data.md'
-      - 'Launch Activity Database': 'pages/knowledge/playbook/launch-adb.md'
-      - 'Onboard Activities': 'pages/knowledge/playbook/onboard-activities.md'
       

@@ -1,8 +1,8 @@
-# Activity Folder
+# Activity Folder Template
 
-A well-organized Activity Folder supports reporting of data by Implementing Partners and aggregation of data across activities by the Data Steward. Atlas requires the standard Activity Folder template is adopted by all activities. The Activity Folder is designed to be flexible in light of the unique nature of each activity while also including standard components that support the Data Steward to access and aggregate data.
+A well-organized Activity Folder supports reporting of data by partners and aggregation of data across activities by the Data Steward. Atlas requires the standard Activity Folder template is adopted by all Activities. The Activity Folder Template is designed to be flexible in light of the unique nature of each activity while also including standard components that support the Data Steward to access and aggregate data.
 
-Detailed instructions for working with A/CORs and Implementing Partners are provided [here](../usage/activity-start-up.md).
+Detailed instructions for working with A/CORs and partners are provided [here](../usage/onboard-activity.md).
 
 !!! note
     Some Implementing Partners may not be able to create Google accounts, which are required to access restricted-access Google Folders. In these cases, the Data Steward should work with the A/COR to develop an alternative solution.

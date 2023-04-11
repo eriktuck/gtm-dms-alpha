@@ -38,7 +38,7 @@ Copy/paste from the `.txt` file with the corrected paths into the PSQL editor pr
     If you are working on the Windows Operating System, change all backslashes to forward slashes in the path.
 
 !!! tip
-    Google Sheets uses UTF8 encoding for CSV downloads. PostgreSQL defaults to the encoding of your system. If these two are not the same, you may experience errors on loading. Check the current encoding of the database with `\encoding`. You must set the database encoding for each session! Learn more about encoding [here](../../knowledge/base/encoding.md).
+    Google Sheets uses UTF8 encoding for CSV downloads. PostgreSQL defaults to the encoding of your system. If these two are not the same, you may experience errors on loading. Check the current encoding of the database with `\encoding`. You must set the database encoding for each session! Learn more about encoding [here](../knowledge/base/encoding.md).
 
 ## Ad-hoc update
 
@@ -62,7 +62,7 @@ Spatial data must first be processed and stored in the Thematic Database before 
 
 ### Load shapefiles
 
-Download the zipped shapefile(s) from the Spatial directory in the [Thematic Database](../../components/thematic-database.md). Unzip the shapefile to your local file system. 
+Download the zipped shapefile(s) from the Spatial directory in the [Thematic Database](../components/thematic-database.md). Unzip the shapefile to your local file system. 
 
 Open the *PostGIS Bundle Shapefile and DBF Importer* application.
 
@@ -85,7 +85,7 @@ Click **Options** and ensure all import options are correct. In particular, ensu
 Click **Import**.
 
 !!! tip
-    If you cannot resolve encoding errors or any other issues when using *PostGIS Bundle Shapefile and DBF Importer*, try using the command line tool `shp2pgsql`. Find the instructions [here](../setup-optional/index.md#import-shapefiles).
+    If you cannot resolve encoding errors or any other issues when using *PostGIS Bundle Shapefile and DBF Importer*, try using the command line tool `shp2pgsql`. Find the instructions [here](../usage/update-thematicdb.md#add-spatial-data).
 
 ### Load raster data
 

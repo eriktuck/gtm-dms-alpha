@@ -22,7 +22,3 @@ CREATE EXTENSION postgis_raster;
 ```
 
 Execute the command (`F5`). You should see a message print out in the Messages window that the query returned successfully.
-
-## Ongoing Maintenance
-
-The Mission Database is now set up. See how to add data and keep the Mission Database up to date [here](../../usage/update-missiondb.md).

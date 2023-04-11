@@ -18,13 +18,13 @@ Activity data are staged in a Google Sheet in the Thematic Database, `activity-d
 Data are staged in the Activity DB Tracker `export2GDB` sheet to limit disruptions arising from changes in the Activity DB Tracker and to protect the data in the Activity DB Tracker from accidental leaks, as some data are procurement-sensitive. These best practices are described [here](../../../knowledge/base/staging-data.md).
 
 ## F
-Using the Data Steward Admin tool, the Data Steward runs a semi-automated data pipeline to [upsert](../../../knowledge/base/upsert.md) data from `activity-data.ghseet` to the Mission Database on a regular basis.
+Using the Data Steward Admin tool, the Data Steward runs a semi-automated data pipeline to upsert data from `activity-data.ghseet` to the Mission Database on a regular basis.
 
 This pipeline creates the `create_activity_data.sql` and `load_activity_data.sql` files stored in the [Data Admin SQL](https://drive.google.com/drive/folders/1wq14SGZLO6lrxefJ3ryR4TpJ5pErCpol?lfhs=2) folder. The `load_activity_data.sql` file contains the SQL commands to upsert data into the Mission Database. The Data Steward uses [psql](../../../knowledge/base/psql.md) to load data in [pgAdmin4](../../../knowledge/base/pgAdmin.md).
 
 (The `create_activity_data.sql` file can be used for data definition (e.g., developing the entity-relationship diagram) but is not required.)
 
-See [Usage](../../../usage/index.md) for detailed instructions on running semi-automated data pipelines.
+See [Usage](../../../usage/overview.md) for detailed instructions on running semi-automated data pipelines.
 
 ## G
 Web applications read data from from `activity-data.ghseet` as needed. 

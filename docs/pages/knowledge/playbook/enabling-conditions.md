@@ -5,4 +5,4 @@ Activity Mission Orders
 * Activity Design
 * Activity Post-award consultation
 
-Leadership bu-in
+Leadership buy-in ("top cover")
