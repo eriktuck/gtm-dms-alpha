@@ -33,6 +33,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 # Page tree
 nav:
@@ -81,6 +88,11 @@ nav:
       - 'Activity Location Data Portal (Public)': 'pages/components/ald-portal-public.md'
       - 'Atlas Distribution Folder': 'pages/components/atlas-distro.md'
   - 'Knowledge':
+    - 'Playbook':
+      - 'pages/knowledge/playbook/index.md'
+    - 'Tutorials':
+      - 'Tableau': 'pages/knowledge/tutorials/tableau-tutorial.md'
+      - 'Google Apps Script': 'pages/knowledge/tutorials/google-apps-script-tutorial.md'
     - 'Knowledge Base':
       - 'pages/knowledge/base/index.md'
       - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
@@ -103,9 +115,3 @@ nav:
       - 'Staging Data': 'pages/knowledge/base/staging-data.md'
       - 'Stakeholder Engagement': 'pages/knowledge/base/stakeholder-engagement.md'
       - 'Trackers': 'pages/knowledge/base/trackers.md'
-    - 'Tutorials':
-      - 'Tableau': 'pages/knowledge/tutorials/tableau-tutorial.md'
-      - 'Google Apps Script': 'pages/knowledge/tutorials/google-apps-script-tutorial.md'
-    - 'Playbook':
-      - 'pages/knowledge/playbook/index.md'
-      
