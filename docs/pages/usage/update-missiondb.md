@@ -1,5 +1,8 @@
 # Update Mission Database
 
+!!! note
+    This workflow is only for installations of Atlas that include the optional Mission Database, a PostgreSQL database.
+
 The Data Steward will update the Mission Database on a regular basis to ensure that data are up-to-date and available for query. The Data Steward Admin Tool produces `.sql` files in the Data Admin SQL folder in Atlas every 24 hours. Upload these file to the Mission Database each day. 
 
 ## Daily update

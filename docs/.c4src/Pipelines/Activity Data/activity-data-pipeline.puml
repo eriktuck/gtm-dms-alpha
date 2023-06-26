@@ -25,7 +25,7 @@ ContainerDb(postgres, "Mission Database", "PostgreSQL", "Aggregate all data", $s
 Container(activityBackup, "Backup", "Google Sheet", "Backup Activity Database", $sprite="border_all")
 
 System_Boundary(thematicDb, "Thematic Database"){
-    Component(activityDataGsheet, "activity-data.ghseet", $sprite="border_all")
+    Component(activityDataGsheet, "activity data", "Google Sheet", "Stage activity data", $sprite="border_all")
 }
 
 System(apps, "Web Apps", "Make data discoverable", $sprite=javascript)

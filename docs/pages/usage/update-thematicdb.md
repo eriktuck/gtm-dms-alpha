@@ -4,8 +4,7 @@ Follow the guidance below to add new data to the thematic database or update exi
 
 Workflows are provided to 
 
-* [Add tabular data](#add-tabular-data)
-* [Add spatial data](#spatial-data-processing-steps)
+* [Add tabular or spatial data](#workflows)
 * [Add reports](#add-reports)
 * [Add a calculated field](#add-a-calculated-field)
 * [Add an external link](#add-an-external-link)
@@ -87,6 +86,9 @@ Processing of tabular data may required specialized expertise and tools dependin
 
 #### Tabular data processing
 
+!!! warning
+    Before continuing, review the general guidance in *Data Flows for Atlas*, above.
+
 1. Access the raw file in your data cleaning tool of choice (e.g., Google Sheets, Google Colab).
 2. Explore the dataset for data quality issues. Look for null values, values out of range, outliers, and other potential data quality issues. Use `#N/A` for null or missing values.
 3. Ensure data comply with the Data Standards. In particular, if sub-national administrative regions are included in the dataset, ensure they reflect the standard names.
@@ -112,6 +114,9 @@ The specific process will differ based on the Geographic Information System (GIS
 Follow the [data flow for atlas](#data-flow-for-atlas) to download, log and upload the data. The processing steps below describe how to process raw spatial data files for use in Atlas.
 
 #### Spatial data processing steps
+
+!!! warning
+    Before continuing, review the general guidance in *Data Flows for Atlas*, above.
 
 1. Access the raw file in your GIS tool of choice.
 2. Visualize or otherwise review the data to familiarize yourself with the data and its attributes.
@@ -140,6 +145,9 @@ Adding a calculated field in the Thematic Database allows you to enrich the data
 4. Log the new column in the `DEFINITIONS` tab. In the `definition` field, describe how the calculation is completed. In the `dataset` field, append `[calcualted]` to the name of the data source to indicate that the data are derived from, not directly attributable to, that data source.
 
 We recommend leaving the equation in the sheet (rather than converting to plain text) so that other users may review how the calculation was completed.
+
+!!! tip
+    Percentages should be scaled from 0 to 100 in the Thematic Database. For example, to calculate the percentage of English speakers per municipality, divide the number of English speakers by the population of the municipality and multiply by 100.
 
 ### Add an external link
 

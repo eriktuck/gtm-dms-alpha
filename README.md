@@ -24,6 +24,5 @@ git status
 git add -A
 git commit -m "<commit message>"
 git push origin main
-mkdocs build
 mkdocs gh-deploy
 ```

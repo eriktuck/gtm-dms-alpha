@@ -1,5 +1,8 @@
 # Update Activity Database
 
+!!! note
+    This section is draft, pending development of the Activity Database 2.0.
+
 ## How to Update
 
 ### Add field

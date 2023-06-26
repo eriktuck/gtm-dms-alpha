@@ -45,9 +45,9 @@ Boundary(agency, "Agency Systems"){
     Container_Ext(dec, "Development Experience Clearinghouse (DEC)")
 }
 
-System_Boundary(meclaLib, "MECLA Library"){
-    Component(thematicDb, "Thematic Database", "Google Folder", $sprite="folder")
-}
+
+Component(thematicDb, "Thematic Database", "Google Folder", $sprite="folder")
+
 
 Component(publicData, "Public Data", "Web", "Publicly available datasets")
 

@@ -22,7 +22,7 @@ Encoding cannot be reliably determined just by looking at a file, unless the enc
 
 White list text characters before importing if you continue to have encoding errors. In some rare cases, a string might contain a byte sequence that cannot be encoded with your chosen coding scheme and the character does not appear when you review the data in the data source.  
 
-To sanitize an `array_of_strings` in javascript, use this [regular expression](https://www.regular-expressions.info/tutorial.html).
+To sanitize an `array_of_strings` in JavaScript, use this [regular expression](https://www.regular-expressions.info/tutorial.html).
 
 ```javascript
 array_of_strings.map(ele => String(ele).replace(/[^\p{Letter}\p{Mark}\p{Number}.,<>"'\[\]\|+@\/#!¡$%\^&\*;:{}=\-_`~()?¿\s]/gui, ''))

@@ -16,7 +16,7 @@ The Data Steward should participate in the design of the Activity to support the
 After [inputting the Activity in the **Activity Database**](update-activitydb.md), create the Activity Folder using the **Activity Folder Template** in Atlas.
 
 1. Create a new folder the Atlas `Activity Folders/` directory. Use the naming convention `1234 - Activity Name`, replacing `1234` with the Activity ID from the **Activity Database** and the `Activity Name` with the Activity's short name.
-2. Using the `copy-folder` script in the [Data Steward Admin Tool](../components/data-steward-admin.md) (located at [script.google.com](https://script.google.com/home)), copy the contents of the Activity Folder Template to the newly created Activity folder.
+2. Using the `copy-folder` script in the [Data Steward Admin Tool](../components/data-steward-admin.md) (located at [script.google.com](https://script.google.com/home)), run the `runCopyFolderFunction` to copy the contents of the Activity Folder Template to the newly created Activity folder. Update the `source` variable within the function to the folder ID of the Activity Folder template (*Admin > Modules > Activity Folder [template]*). Update the `destination` variable to the folder ID of the newly created Activity folder in the `Activity Folders/` directory.
 3. Update the Activity Database with the link to the Activity Folder.
 4. Log the links to the Activity Folder and Activity Location Data Tracker in the Atlas **Data Inventory.**
 

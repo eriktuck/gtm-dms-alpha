@@ -50,6 +50,7 @@ nav:
     - 'Setup': 
       - 'Set Up Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
       - 'Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
+      - 'Set Up Imports': 'pages/get-started/setup/setup-imports.md'
       - 'Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
       - 'Next Steps': 'pages/get-started/setup/setup-next-steps.md'
     - 'Optional Setup':

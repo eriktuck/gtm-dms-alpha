@@ -1,6 +1,6 @@
 # Update Atlas Documentation
 
-We encourage you to expand and customize this documentation for your own use. To suggest edits to this documentation, please open an Issue on this repository in GitHub.  
+We encourage you to expand and customize this documentation for your own use. To suggest edits to this documentation, please open an issue on this repository in GitHub.  
 
 ## Fork this repo
 
