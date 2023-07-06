@@ -1,4 +1,4 @@
-# Set up IMPORTRANGE
+# Set Up Imports
 
 Atlas uses a number of `IMPORTRANGE` functions to pipe data between spreadsheets. In this step, you will update the spreadsheet IDs in each `IMPORTRANGE` function to the IDs of your copy of each file.
 

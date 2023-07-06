@@ -1,7 +1,7 @@
 site_name: Atlas
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
 edit_uri: edit/main/docs/
-site_description: Activity-level data management solutions for the full data lifecycle. 
+site_description: Supporting the pillars of Agency data management for the Guatemala Mission. 
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -48,9 +48,10 @@ nav:
     - 'Setup Overview': 'pages/get-started/overview.md'
     - 'Requirements': 'pages/get-started/requirements.md'
     - 'Setup': 
-      - 'Set Up Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
-      - 'Set Up Atlas Directory': 'pages/get-started/setup/setup-drive.md'
+      - 'Copy Data Steward Admin Tool': 'pages/get-started/setup/setup-admin.md'
+      - 'Copy Atlas Directory': 'pages/get-started/setup/setup-drive.md'
       - 'Set Up Imports': 'pages/get-started/setup/setup-imports.md'
+      - 'Set Up Code Files': 'pages/get-started/setup/setup-code.md'
       - 'Set Up Web Applications': 'pages/get-started/setup/setup-webapps.md'
       - 'Next Steps': 'pages/get-started/setup/setup-next-steps.md'
     - 'Optional Setup':

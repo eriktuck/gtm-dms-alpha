@@ -1,4 +1,4 @@
-# Set up Atlas Directory
+# Copy Atlas Directory
 
 Next you will create a copy of the Atlas directory on your Google Drive. This will copy all folders, files and templates needed to get started.
 
