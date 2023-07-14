@@ -45,7 +45,7 @@ When adding data to the Data Catalog Google Sheet, do not check the box in the c
 
 ### Data Standards
 
-Whenever possible, use the [Mission Data Standards](../components/data-standards.md) when coding data. The Agency has data standards for gender, age and other variables. Missions will have additional data standards, including standard administrative boundary names.
+Whenever possible, use the [Mission Data Standards](../knowledge/playbook/enabling-conditions.md#define-data-standards) when coding data. The Agency has data standards for gender, age and other variables. Missions will have additional data standards, including standard administrative boundary names.
 
 ### Encoding
 
