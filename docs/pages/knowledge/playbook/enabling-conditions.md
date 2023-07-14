@@ -1,4 +1,4 @@
-# Creating the enabling conditions
+# Enabling Conditions
 
 The level of effort to create the enabling conditions for a data-informed, geographic approach to development will depend on many factors. If the Mission is in compliance with all requirements of ADS 579 and using existing Agency systems like the DIS, many of the enabling conditions are likely already in place. 
 

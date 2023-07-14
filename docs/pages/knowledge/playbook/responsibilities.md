@@ -1,4 +1,4 @@
-# Who is responsible?
+# Who is Responsible?
 
 ADS 579.2 and ADS579mab section 6 outline the primary responsibilities of entities involved in data collection, management and use within USAID. The responsibilities of relevant entities are described below.
 
