@@ -93,7 +93,7 @@ nav:
     - 'Playbook':
       - 'pages/knowledge/playbook/index.md'
       - 'Stocktaking': 'pages/knowledge/playbook/stocktaking.md'
-      - 'Insitutional Support': 'pages/knowledge/playbook/institutional-support.md': 
+      - 'Insitutional Support': 'pages/knowledge/playbook/institutional-support.md'
       - 'Enabling Conditions': 'pages/knowledge/playbook/enabling-conditions.md'
       - 'Implementation': 'pages/knowledge/playbook/implementation.md'
       - 'Continuous Improvement': 'pages/knowledge/playbook/continuous-improvement.md'
