@@ -1,15 +1,11 @@
 # Onboard an Activity
 
 !!! tip
-    Before onboarding an Activity to Atlas, ensure that the Activity contract includes the required provisions. If the Mission does not yet have standard Solicitation and Award Language that meets the requirements of Atlas, see the Playbook for guidance on creating the [enabling conditions](../knowledge/playbook/enabling-conditions.md) for successful roll out of Atlas with partners. Avoid "voluntary" data requests, as even voluntary requests can create undue burden on partners.  **Always include the A/COR in communications with partners.**
+    Before onboarding an Activity to Atlas, ensure that the Activity contract includes the required provisions. If the Mission does not yet have standard Solicitation and Award Language that meets the requirements of Atlas, see the Playbook for guidance on [creating the enabling conditions](../knowledge/playbook/enabling-conditions.md) for successful roll out of Atlas with partners. Avoid "voluntary" data requests, as even voluntary requests can create undue burden on partners.  **Always include the A/COR in communications with partners.**
 
 Each Activity should be onboarded to Atlas during initial start up. Ideally, the Data Steward will coordinate with the Technical Team as early as Activity Design.
 
 Onboarding an Activity to Atlas will simplify the reporting process and ensure Activity documentation, Intellectual Works and the data behind them are accessible to the Data Steward and thus the Mission. More importantly, onboarding an Activity is an opportunity to engage with Technical Team and partners to help them manage data as an asset and use data responsibly.
-
-### Support Activity design
-
-The Data Steward should participate in the design of the Activity to support the Technical Team to develop a data strategy for the Activity; understand requirements for data collection, management and reporting; and provide input on the Independent Government Cost Estimate (IGCE).
 
 ### Set up the Activity Folder
 

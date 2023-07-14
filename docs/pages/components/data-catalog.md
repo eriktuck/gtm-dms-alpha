@@ -12,4 +12,3 @@ The Data Catalog is simple Google Apps Script search front end for a collection 
 
 ---
 
-## 

@@ -33,9 +33,7 @@ In the new sheet, use the `IMPORTRANGE` function to import the data.
 
 3. Authorize access to the data source. You only need to do this on the first time. Click the cell A1 and select "Allow Access".
 
-<figure markdown>   ![click allow access](https://storage.googleapis.com/ei-dev-assets/assets/chrome_hK6Qt3d4JT.png)   
-</figure>
-
+![img](https://storage.googleapis.com/ei-dev-assets/assets/chrome_hK6Qt3d4JT.png)   
 
 ## Using a Query
 

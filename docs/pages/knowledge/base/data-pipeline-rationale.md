@@ -10,7 +10,7 @@ For the Activity Database especially, the data most be converted from a flat fil
 
 ETL of these data into the Mission Database therefore requires a strategy for (1) reading data from Google Drive, (2) manipulating data into desired formats, and (3) reading the data in to the Mission Database. A layer of data validation may also be useful. 
 
-USAID has immediate access to tools such as Python (Google Collab) and JavaScript (Google Apps Script) for these tasks, or the Data Steward could request access to additional technology like a cloud database. Below we discuss each option for ETL of Mission data into the Mission Database.
+The Mission has immediate access to tools such as Python (Google Collab) and JavaScript (Google Apps Script) for these tasks, or the Data Steward could request access to additional technology like a cloud database. Below we discuss each option for ETL of Mission data into the Mission Database.
 
 1. **Get permission to use a cloud database.** If approved, a cloud database would  be able to serve data for applications that require it (e.g, Data Hub) and allow programmatic access to use a scripting language like Python for ETL tasks. This is likely the best option for functionality but the least likely option given M/CIO attitudes towards cloud databases.
 2. **Use Python (Google Collab):** Python libraries like SQLAlchemy can support loading data into the Mission Database. The fatal flaw of this option is M/CIO's restriction on programmatic access to Google Drive by Google Collab. Without this access, you must download data to csv and upload each to Google Collab before processing and passing to the database. 
@@ -127,7 +127,7 @@ To **add new data from the DDL**
 2. Register the download link for the template in a Google Sheet (don't publish the template to the web, just use the link described above, it should only be accessible to the Data Steward)
 3. Create a scheduled Google Apps Script to compile all data from each Activity Location Data template (using the links registered in step 2) into a single Google Sheet. 
 4. Create another scheduled Google Apps Script to create a `.sql` file to `COPY` new Activity Location data to the Mission Database. 
-5. Use the Google Colab script (==or write in JavaScript==) to convert Activity Location Data to hex locations and transfer to Activity Location Data (public).
+5. Use the Google Colab script to convert Activity Location Data to hex locations and transfer to Activity Location Data (Public).
 
 ### Activity-specific data
 
@@ -150,27 +150,18 @@ Datasets like these are of interest for quarterly updating into the Mission Data
    3. constraints
 2. Register the Data Inventory sheet in the Data Steward Admin Dashboard (or you could register the entire folder and programmatically access it)
 
-==should we read into an interim sheet or read directly to the database?==
-
 3. Use a Google Apps Script to access each Data Inventory sheet and the datasets registered within to create a `.sql` file to update the Mission database. 
 
 > Encourage the Implementing Partner to append new records to their dataset, rather than creating multiple datasets by reporting period. Not only will this make updating the Mission Database easier, it will also force them to de-dup data rather than require you to figure out how to do that.
 
 #### From the DDL
 
-Many datasets will be submitted to the DDL (or should be). After submission, they can be added to the Thematic Database and the process described for those datasets should be followed. 
+Many datasets will be submitted to the DDL (or should be). After submission, they can be added to the Thematic Database and the process described for those datasets should be followed. The DDL has an API that could be used for this purpose.
 
 ### Performance Monitoring Reports
 
-Performance Monitoring Reports contain the targets, baselines, and actuals for performance measures by Activity. 
-
-==These are best stored as documents?==
+Performance Monitoring Reports contain the targets, baselines, and actuals for performance measures by Activity. Given the unstructured nature of these data, they may be best saved as `json` documents. PostgreSQL can handle `json` documents.
 
 #### Spatial Data
 
-Spatial data are stored in ArcGIS Online and the `Spatial/` directory of the Thematic Database. Spatial data can be uploaded to PostgreSQL with PostGIS. Given the sporadic nature of acquiring spatial data, this can be handled manually by the Data Steward and GIS Specialist. 
-
-1. Upload to ArcGIS Online
-2. Upload to PostgreSQL
-
-==add step by step instructions== 
+Spatial data are stored in ArcGIS Online and the `Spatial/` directory of the Thematic Database. Spatial data can be uploaded to PostgreSQL with PostGIS and to ArcGIS Online. Given the sporadic nature of acquiring spatial data, this can be handled manually by the Data Steward and GIS Specialist. 

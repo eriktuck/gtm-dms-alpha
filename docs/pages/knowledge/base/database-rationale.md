@@ -30,7 +30,7 @@ This solution is best for an advanced Python user with access to ArcPro.
 
 #### PostgreSQL
 
-PostgreSQL is a robust, client/server style relational database management system. PostgreSQL has been approved by M/CIO and so should be available but must be requested. pgAdmin is the database client and psql is the command line tool. 
+PostgreSQL is a robust, client/server style relational database management system. PostgreSQL has been approved by M/CIO for restricted use and must be requested for new uses. pgAdmin is the database client and psql is the command line tool. 
 
 PostgreSQL includes PostGIS, an extension for geospatial data, bindings for Uber's H3, and JSON support, replicating some of the benefits of a file-based No-SQL database.
 

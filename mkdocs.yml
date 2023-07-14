@@ -92,18 +92,25 @@ nav:
   - 'Knowledge':
     - 'Playbook':
       - 'pages/knowledge/playbook/index.md'
+      - 'pages/knowledge/playbook/stocktaking.md'
+      - 'pages/knowledge/playbook/enabling-conditions.md'
+      - 'pages/knowledge/playbook/implementation.md'
+      - 'pages/knowledge/playbook/continuous-improvement.md'
+      - 'pages/knowledge/playbook/additional-engagement.md'
+      - 'pages/knowledge/playbook/responsibilities.md'
     - 'Tutorials':
+      - 'Activity-Level Data': 'pages/knowledge/tutorials/activity-level-data.md'
       - 'Tableau': 'pages/knowledge/tutorials/tableau-tutorial.md'
       - 'Google Apps Script': 'pages/knowledge/tutorials/google-apps-script-tutorial.md'
     - 'Knowledge Base':
       - 'pages/knowledge/base/index.md'
       - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
-      - 'Continual Improvement': 'pages/knowledge/base/continual-improvement.md'
       - 'Coordinate Reference Systems': 'pages/knowledge/base/crs.md'
       - 'Database Options': 'pages/knowledge/base/database-rationale.md'
       - 'Encoding': 'pages/knowledge/base/encoding.md'
       - 'Google Apps Script': 'pages/knowledge/base/google-apps-script.md'
       - 'H3': 'pages/knowledge/base/h3.md'
+      - 'IFrame': 'pages/knowledge/base/iFrame.md'
       - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
       - 'Naming Conventions': 'pages/knowledge/base/naming-conventions.md'
       - 'Null Values': 'pages/knowledge/base/null-values.md'
@@ -117,3 +124,4 @@ nav:
       - 'Staging Data': 'pages/knowledge/base/staging-data.md'
       - 'Stakeholder Engagement': 'pages/knowledge/base/stakeholder-engagement.md'
       - 'Trackers': 'pages/knowledge/base/trackers.md'
+      - 'Versioning': 'pages/knowledge/base/versioning.md'

@@ -1,4 +1,4 @@
-# Stakeholder Engagement
+# Stakeholder Engagement Plan
 
 Developing a solution does not guarantee that intended users will use the solution. Both primary users and stakeholders (secondary users) must be engaged to promote awareness of the product, learn how to use the product, and tailor the product to meet their needs.
 
