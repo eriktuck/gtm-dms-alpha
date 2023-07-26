@@ -10,7 +10,7 @@ Create a page on [MyUSAID](https://pages.usaid.gov) to describe Atlas and share 
 
 ## Data Hub
 
-Develop a Google Site to share products and partner resources like the [Guatemala Data Hub](https://sites.google.com/usaid.gov/guatemaladatahub). Be sure to secure approvals from the [Web Governance Board](https://www.usaid.gov/egov/xweb) first.
+Develop a Google Site to share products and partner resources like the [Guatemala Data Hub](https://sites.google.com/usaid.gov/guatemaladatahub). Be sure to secure approvals from the [Web Governance Board](https://www.usaid.gov/egov/xweb) first ([internal link](https://pages.usaid.gov/LPA/website-governance-board-approval-procedures)).
 
 ## Customer service approach
 

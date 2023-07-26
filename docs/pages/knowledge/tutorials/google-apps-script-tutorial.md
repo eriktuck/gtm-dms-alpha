@@ -674,5 +674,3 @@ function include(filename){
         - [YouTube - Learn Google Spreadsheets - Web Apps Playlists](https://www.youtube.com/c/LearnGoogleSpreadsheets/playlists?view=50&sort=dd&shelf_id=6)
 
 
-
-### 

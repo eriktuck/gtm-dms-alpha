@@ -1,10 +1,10 @@
 # Who is Responsible?
 
-ADS 579.2 and ADS579mab section 6 outline the primary responsibilities of entities involved in data collection, management and use within USAID. The responsibilities of relevant entities are described below.
+ADS 579.2 and ADS579mab section 6 outline the primary responsibilities of entities involved in data collection, management and use within the Agency. The responsibilities of relevant entities are described below.
 
 **Operating Units** are responsible for 
 
-- including Datasets as deliverables in USAID awards, when writing statements of work or program descriptions. 
+- including Datasets as deliverables in awards, when writing statements of work or program descriptions. 
 - appointing and maintaining a Data Steward and their alternate, ensuring their participation in meetings, taskings, and trainings coordinated by the InfoGov Permanent Working Group (PWG);
 - utilizing Datasets and Activity Location Data during strategic planning and project design, to adapt interventions when appropriate, and as part of their Collaborating, Learning and Adapting (CLA) approach to engage and coordinate across the OU, with partners and among key stakeholders;
 - ensure that Activity Planners or Design Teams, CORs/AORs/GATRs, and/or other subject matter experts receive training on geographic data collection and analysis practices.
@@ -22,7 +22,7 @@ ADS 579.2 and ADS579mab section 6 outline the primary responsibilities of entiti
 
 - identify and include Datasets as deliverables that would benefit the development community during the formulation of the annual work plan; 
 - consult with IPs to ensure the understand the requirements for collection and submission of Datasets including Activity Location Data;
-- ensure that USAID-funded Datasets are collected submitted to USAID in accordance with the terms of the award under which they were created;
+- ensure that USAID-funded Datasets are collected and submitted in accordance with the terms of the award under which they were created;
 - review Datasets prior to submission, which includes identifying principled exceptions to release, redacting (or ensuring the redaction of) sensitive information, and obtaining required clearances (see 579.3.3.5);
 - utilize Datasets including Activity Location Data with other monitoring data to inform efforts to manage adaptively and promote accountability.
 

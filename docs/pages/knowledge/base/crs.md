@@ -27,4 +27,3 @@ The Universal Transverse Mercator (UTM) CRS is a common a projected coordinate s
 To find the EPSG code of the UTM Zone, search [this database](https://spatialreference.org/).
 
 Alternatively, use World Equidistant Cylindrical (EPSG code 4087) for imprecise calculations without worrying about which UTM zone to use.
-

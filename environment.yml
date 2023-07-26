@@ -1,7 +1,7 @@
 name: gtm-dms-alpha
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - mkdocs
   - mkdocs-material
-prefix: C:\Users\Erik_Anderson\miniconda3\envs\gtm-dms-alpha
