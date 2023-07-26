@@ -16,6 +16,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes # (allows pages associated with section groups)
+    - navigation.footer
     - search.share
     - search.suggest
     - search.highlight
