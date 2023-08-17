@@ -20,4 +20,4 @@ As the Mission collects more data it will need to make collective decisions the 
 
 ## Acquire software
 
-Acquiring software for data visualization and GIS will help discover insights and create products that meet the needs of Mission staff. The [DataSeed Blanket Purchase Agreement (BPA)](https://drive.google.com/file/d/1AYyIUQo41y0sRLVyInfDjppl4DCr0GWP/view) is the fastest way to acquire Esri ArcGIS and Tableau.
+Acquiring software for data visualization and GIS will help discover insights and create products that meet the needs of Mission staff. The [DataSeed Blanket Purchase Agreement (BPA)](https://drive.google.com/file/d/1AYyIUQo41y0sRLVyInfDjppl4DCr0GWP/view) is the fastest way to acquire Esri ArcGIS and Tableau. Create onboarding materials for users to help new users adopt these technologies (see for example our onboarding guide for Tableau [here](https://docs.google.com/document/d/1OvbbSzJ0P00GzUSgNm42hpCi8a9INj8pM9ZIiyEyrEY)).
