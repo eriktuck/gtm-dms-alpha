@@ -123,7 +123,7 @@ nav:
       - 'Google Apps Script': 'pages/knowledge/base/google-apps-script.md'
       - 'H3': 'pages/knowledge/base/h3.md'
       - 'IFrame': 'pages/knowledge/base/iFrame.md'
-      - 'Independent Government Cost Estimate (IGCE) for MECLA': 'pages/knowledge/base/igce.md'
+      - 'IGCE for MECLA': 'pages/knowledge/base/igce.md'
       - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
       - 'Naming Conventions': 'pages/knowledge/base/naming-conventions.md'
       - 'Null Values': 'pages/knowledge/base/null-values.md'
