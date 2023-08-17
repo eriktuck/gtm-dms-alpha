@@ -2,7 +2,7 @@
 
 Partners should set aside sufficient budget to meet requirements for data collection and sharing. The Mission should ensure that the requirements are clearly defined in solicitation and award language. When issuing the request for proposals, the Mission will develop an Independent Government Cost Estimate (IGCE) to estimate these costs.
 
-This guide supports the Mission in developing the IGCE for the functions of Monitoring, Evaluation Collaborating, Learning and Adapting (MECLA) to better evaluate pr.
+This guide supports the Mission in developing the IGCE for the functions of Monitoring, Evaluation Collaborating, Learning and Adapting (MECLA) to better evaluate proposals.
 
 !!! info
     To learn more about the types of data that partners collect, see [here](activity-level-data.md).
