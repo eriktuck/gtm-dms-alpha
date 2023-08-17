@@ -40,7 +40,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 # Page tree
 nav:
@@ -101,13 +105,13 @@ nav:
       - 'Additional Engagement': 'pages/knowledge/playbook/additional-engagement.md'
       - 'Responsibilities': 'pages/knowledge/playbook/responsibilities.md'
     - 'Tutorials':
-      - 'Activity-Level Data': 'pages/knowledge/tutorials/activity-level-data.md'
       - 'Tableau': 'pages/knowledge/tutorials/tableau-tutorial.md'
       - 'Google Apps Script': 'pages/knowledge/tutorials/google-apps-script-tutorial.md'
       - 'Leaflet': 'pages/knowledge/tutorials/leaflet-tutorial.md'
       - 'Other Tutorials': 'pages/knowledge/tutorials/other-tutorials.md'
     - 'Knowledge Base':
       - 'pages/knowledge/base/index.md'
+      - 'Activity-Level Data': 'pages/knowledge/base/activity-level-data.md'
       - 'Add PSQL to PATH': 'pages/knowledge/base/add-psql-to-path.md'
       - 'Coordinate Reference Systems': 'pages/knowledge/base/crs.md'
       - 'Database Options': 'pages/knowledge/base/database-rationale.md'
@@ -119,6 +123,7 @@ nav:
       - 'Google Apps Script': 'pages/knowledge/base/google-apps-script.md'
       - 'H3': 'pages/knowledge/base/h3.md'
       - 'IFrame': 'pages/knowledge/base/iFrame.md'
+      - 'Independent Government Cost Estimate (IGCE) for MECLA': 'pages/knowledge/base/igce.md'
       - 'IMPORTRANGE': 'pages/knowledge/base/importrange.md'
       - 'Naming Conventions': 'pages/knowledge/base/naming-conventions.md'
       - 'Null Values': 'pages/knowledge/base/null-values.md'
