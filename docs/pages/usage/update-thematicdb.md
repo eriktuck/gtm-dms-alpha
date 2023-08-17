@@ -93,7 +93,7 @@ Processing of tabular data may required specialized expertise and tools dependin
 2. Explore the dataset for data quality issues. Look for null values, values out of range, outliers, and other potential data quality issues. Use `#N/A` for null or missing values.
 3. Ensure data comply with the Data Standards. In particular, if sub-national administrative regions are included in the dataset, ensure they reflect the standard names.
 4. If necessary, normalize the data by splitting cells into multiple records or the table into multiple tables.
-5. Once processed, store the data in the appropriate Google Sheet within the Thematic Database. Store the data in the `External/Tabular` directory unless the data should not be shared publicly. 
+5. Once processed, store the data in the appropriate Google Sheet within the Thematic Database. Use the `Shared Externally/Tabular` directory unless the data should not be shared publicly, in which case use the `Internal/Tabular` directory. 
 6. Update `DEFINITIONS` tab of the Google Sheet to describe the fields in the new dataset. The `DEFINTIONS` tab is used by multiple applications in Atlas.
 7. Update the access link, worksheet ID and worksheet name in the **Internal Data Catalog**. 
 
