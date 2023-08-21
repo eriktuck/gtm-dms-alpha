@@ -24,5 +24,9 @@ git status
 git add -A
 git commit -m "<commit message>"
 git push origin main
+```
+
+This project uses a [Git Hub Actions workflow](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#__tabbed_1_2) to deploy the site on update to the main branch. To update manually, use
+```bash
 mkdocs gh-deploy
 ```

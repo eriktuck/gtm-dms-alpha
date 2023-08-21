@@ -1,6 +1,6 @@
 site_name: Atlas
 repo_url: https://github.com/eanderson-ei/gtm-dms-alpha
-edit_uri: edit/main/docs/
+edit_uri: https://github.com/eanderson-ei/gtm-dms-alpha/edit/main/docs/  # update username in url
 site_description: Supporting the pillars of Agency data management for the Guatemala Mission. 
 extra_css:
   - stylesheets/extra.css
@@ -15,7 +15,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.indexes # (allows pages associated with section groups)
+    - navigation.indexes
     - navigation.footer
     - search.share
     - search.suggest

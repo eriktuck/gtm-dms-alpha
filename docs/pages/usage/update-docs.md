@@ -6,14 +6,35 @@ We encourage you to expand and customize this documentation for your own use. To
 
 The best way to update Atlas documentation is to fork this repository (requires a GitHub account). Once you  have forked the repository, follow the process below to serve this documentation in your own GitHub pages site.
 
-1. In your repo on GitHub, open the **Settings** tab and select **Pages**. 
-3. In the **Build and deployment** section, under **Source** select "Deploy from a branch". 
-4. Under **Branch**, select the `gh-pages` branch. 
-5. Click **Save**.
+* Edit the `edit_uri` variable in the file `mkdocs.yml` (line 3) by changing the user name in the url from `eanderson-ei` to your user name. This will allow you to edit your fork of the documentation.
+
+```yml
+edit_uri: https://github.com/<your username>/gtm-dms-alpha/edit/main/docs/
+```
+
+- In your repo on GitHub, open the **Settings** tab and select **Pages**. 
+- In the **Build and deployment** section, under **Source** select "Deploy from a branch". 
+- Under **Branch**, select the `gh-pages` branch. 
+- Click **Save**.
 
 GitHub requires a few seconds to create the site, but soon you'll find the link to the site under **Settings > Pages**. This is also where you can unpublish a site.
 
 You will now be able to edit the documentation directly by clicking the edit icon for each page.
+
+### Editing pages
+
+* To edit a page, first click the edit icon in the top right of the page (the home page is the only page that does not display this icon). 
+* Make the desired edits in the Markdown editor 
+* Click the **Commit changes** button to save your changes. 
+* A dialog box will open. Optionally, edit the commit message and extended description.
+* Ensure that *Commit directly to the `main` branch* is selected.
+* Click the **Commit changes** button.
+
+![img](https://storage.googleapis.com/ei-dev-assets/assets/chrome_hpC7BLninr.png)
+
+After a few minutes, the documentation will be updated. 
+
+To learn more about the Markdown syntax check out the [Markdown Guide](https://www.markdownguide.org/). Some syntax is specific to the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) package and [extensions](https://squidfunk.github.io/mkdocs-material/reference/). 
 
 ## Download documentation
 
