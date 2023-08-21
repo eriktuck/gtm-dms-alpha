@@ -1,5 +1,8 @@
 # Copy Data Steward Admin Tool
 
+!!! tip
+    Atlas is currently growing and many new features are available. To ensure you get the latest version, contact erianderson@usaid.gov before setting up Atlas.
+
 Before you begin, make sure you are logged into your work-issued Google Workspace account where the Atlas project will be stored.
 
 1. Follow this [link](https://script.google.com/d/1WrrdjjEfdI3tT5QD1obSuMtiJRTbGZ_U3-RonWcfF4Ft_K6ZnYC0tozi/edit?usp=sharing) to access the Data Steward Admin Tool.

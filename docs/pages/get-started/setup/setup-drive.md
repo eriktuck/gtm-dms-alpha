@@ -1,5 +1,7 @@
 # Copy Atlas Directory
 
+
+
 Next you will create a copy of the Atlas directory on your Google Drive. This will copy all folders, files and templates needed to get started.
 
 1. Create a new folder on your work-issued Google Drive or Shared Drive called `Atlas`.
