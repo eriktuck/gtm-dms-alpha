@@ -20,6 +20,7 @@ theme:
     - search.share
     - search.suggest
     - search.highlight
+    - content.action.edit
   font:
     text: Source Sans Pro
 extra:
