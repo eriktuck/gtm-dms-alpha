@@ -1,0 +1,322 @@
+<!--
+  Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+{% extends "main.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  <style>
+
+    /* Application header should be static for the landing page */
+    .md-header {
+      position: initial;
+    }
+
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+      margin: 10px;
+      padding: 10 10 10 10;
+    }
+
+    /* Hide main content for now */
+    .md-content {
+      display: none;
+    }
+
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+
+    .mdx-hero__title{
+      font-size: 4rem !important;
+      margin: 0 0 0 0 !important;
+    }
+
+    /* Parallax */
+    /* body
+    {
+      overflow-x: hidden;
+      background: white;
+      min-height: 100vh;
+    } */
+
+    /* #header
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-betweeen;
+      align-items: center;
+    } */
+
+    /* .mdx-hero__image{
+      position: relative;
+      width: 100%;
+      min-height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mdx-hero img
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: coverage;
+      pointer-events: none;
+    } */
+
+    .row {
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+    }
+
+    .column {
+      flex: 100%;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (min-width: 600px) {
+      .column {
+        flex: 50%;
+      }
+    }
+    
+  </style>
+  <!-- Hero for landing page -->
+    <section class="mdx-container" style="margin:1em">
+    
+      <div class="md-grid md-typeset">
+        
+        <div class="mdx-hero">
+          
+          <div class="row" style="align-items: center">
+            <div class="column">
+              <!-- Hero content -->
+                <div class="mdx-hero__content">
+                  <h1 class="mdx-hero__title">Atlas</h1>
+                  <p>{{ config.site_description }}</p>
+                  <br>
+                  <a
+                    href="pages/get-started/overview/"
+                    title="{{ page.next_page.title | e }}"
+                    class="md-button md-button--primary"
+                  >
+                    Get Started
+                  </a>
+                  <a
+                    href="https://docs.google.com/presentation/d/e/2PACX-1vTFHajHWvqL2yKh7_4H_IGBrjNdf0qO7hhDt9M02S-3qQPpp5sf8Qts1D3VDhvPWar_CVdQK3thBTIT/pub?start=false&loop=false&delayms=60000"
+                    target="_blank"
+                    title="Learn More"
+                    class="md-button"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+              <!-- Hero image -->
+              <div class="column">
+                <div class="mdx-hero__image">
+                  <img style="margin: 0px"
+                    id="people"
+                    src="assets/home-img.png"
+                    alt="people and computer"
+                    width="700"
+                    height="350"
+                    draggable="false"
+                  >
+                  <p style="font-size: .75em; text-align: right; margin: 0px; color: lightblue">
+                    <a 
+                    style="color: grey" 
+                    href="https://www.freepik.com/">
+                    Image by pch.vector on Freepick
+                    </a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section style="background-color: #ececec">
+      <div class="md-grid md-typeset" id="features">
+        <br>
+        <h2>
+          A data-informed, geographic approach to development
+        </h2>
+        <div class="row" >
+          <div class="column" style="margin-right:1em">
+            <h3><b>Leverages the Google Workplace Tools You Know</b></h3>
+            <p>Atlas runs on Google Workplace—which Mission staff already know how to use. Plus, you only have to ask for data once. Atlas uses <b>automated data pipelines</b> to share data across applications.</p>
+          </div>
+          <div class="column" style="margin-left:1em">
+            <h3><b>Integrates with Agency Systems</b></h3>
+            <p>Atlas helps to <b>centralize data management</b> across the Mission. Think of it as an extension of the Agency systems you already use for reporting and other data management tasks. It offers the functionality the Mission needs while easily integrating with existing Agency systems. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column" style="margin-right:1em">
+            <h3><b>Brings Data to Your Fingertips</b></h3>
+            <p>Atlas brings all of your activity-level data into the Mission Database for advanced queries. Answer questions and respond to taskers with ease.</p>
+          </div>
+          <div class="column" style="margin-left:1em">
+            <h3><b>Make Data Discoverable with Custom Applications</b></h3>
+            <p>Atlas includes multiple out-of-the-box web applications. With all of your data in one place, the Mission's data champions can easily build <b>custom applications</b> using Google Apps Script, Tableau, or Esri ArcGIS. </p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </section>
+
+    <section>
+      <div class="md-grid md-typeset">
+        <br>
+        <div class="row">
+          <div class="column">
+            <h2>Custom web applications</h2>
+            <p>Atlas's interactive applications display and analyze data—helping you make connections to empower your work</p>
+            <ul>
+              <li><a href="pages/components/data-catalog"><b>Data Catalog</b></a>: Search this catalog to find data to support evidence-based decision-making.</li>
+              <li><a href="pages/components/map-viewer"><b>Map Viewer</b></a>: See spatial distribution of key context indicators.</li>
+              <li><a href="pages/components/ald-portal-public"><b>Activity Location Data Portal (Public)</b></a>: Share Implementing Partner Activity Location Data generalized for public consumption.</li>
+            </ul>
+          </div>
+          <div class="column">
+            <hr>
+            <img
+              src="https://storage.googleapis.com/ei-dev-assets/assets/chrome_375ajHIRN3.gif"
+              alt="data catalog gif"
+              draggable="false"
+            >
+            <hr>
+          </div>
+        </div>
+        <br>
+      </div>
+    </section>
+
+    <section style="background-color: #ececec">
+      <div class="md-grid md-typeset">
+        <div class="row" style="align-items: center">
+          <div class="column" style="margin-right:1em">
+            <br>
+            <img
+              src="assets/setup-home.png"
+              alt="data steward"
+              width="500"
+              height="500"
+              draggable="false"
+            >
+            <p style="font-size: .75em; text-align: left; margin: 0px; color: lightblue">
+              <a 
+              style="color: grey" 
+              href="https://www.freepik.com/">
+              Image by storyset on Freepick
+              </a>
+            </p>
+          </div>
+          <div class="column" style="margin-left:1em">
+            <h2>Setup and maintenance</h2>
+            <p>
+              Atlas is everyone at the Mission. But setting up and maintaining Atlas requires selecting a <b>Data Steward</b>.
+              <br><br>
+              The Data Steward might be a Geographic Information Systems (GIS) Specialist, contractor through a Monitoring, Evaluation, and Learning (MEL) Platform, or just a data champion in the Mission.
+              They'll need at least <b>one day per week</b> to support the Mission in the adoption and use of Atlas.
+              <br><br>
+              The Mission is making progress towards meeting new ADS 579 requirements and onboarding to the Development Information System (DIS). The Data Steward will help develop the capacity and culture of the Mission to follow data best practices using Atlas. Long-term, this will pay dividends in Atlas's value for the Mission's data management. 
+              <br><br>
+              Data Stewards have a proficiency in <b>database management</b> and <b>strong communication skills</b>. Advanced users have experience with <b>Google Apps Script</b>. See the Atlas <a href="pages/get-started/requirements">requirements</a> page for more detail.
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="md-grid md-typeset">
+        <h2>Solutions not software</h2>
+        <p>
+          Atlas is not software. Atlas is a data management approach for the Guatemala Mission. This site provides documentation for the Data Steward to implement and manage Atlas in the Guatemala Mission. 
+        </p>
+        <p>
+          If you or your Mission are looking for new ways to leverage activity-level data while using tools you're familiar with and integrated with Agency systems, consider Atlas. Atlas is free, open source and easy to set up. Click <a href="pages/get-started/overview/">Get Started</a> to begin. Contact <a href="mailto:erianderson@usaid.gov">erianderson@usaid.gov</a> for more information.
+        </p>
+        <br>
+      </div>
+    </section>
+
+    <hr></hr>
+    
+    <footer style="background-color: #002F6C">
+      <div class="md-grid md-typeset" >
+        <br>
+        <p style="font-size: .75em; color: white">
+          <em>
+          Disclaimer: Atlas was developed exclusively for the Guatemala Mission. The contents of this documentation are the sole responsibility of the authors and are not construed to reflect the views of any agency or the United States Government. Secure necessary approvals before installing any software or uploading any data.
+          </em>
+        </p>
+      </div>
+    <!-- </footer> -->
+
+  
+
+  <!-- <script>
+    let text = document.getElementsByClassName('mdx-hero__content')[0]
+    let people = document.getElementById('people')
+    let map = document.getElementById('map')
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+
+      people.style.top = value * -.5 + 'px'
+      map.style.top = value * -1 + 'px'
+    })
+  </script> -->
+{% endblock %}
+
+<!-- Content -->
+{% block content %}{% endblock %}
+
+<!-- Application footer -->
+{% block footer %}{% endblock %}
