@@ -2,7 +2,7 @@
 
 Documentation for the Mission Data Management System (alpha version).
 
-Find the site [here](https://eanderson-ei.github.io/gtm-dms-alpha/).
+Find the site [here](https://eriktuck.github.io/gtm-dms-alpha/).
 
 Project relies on these great packages:
 
